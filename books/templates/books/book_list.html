@@ -1,0 +1,10 @@
+<h1>books</h1>
+<ul>
+{% for book in object_list %}
+    <embed type="application/pdf" src="/media/{{ book.book }}" ></embed>
+
+    <li>{{ book.title }}</li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
