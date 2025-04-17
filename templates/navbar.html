@@ -1,0 +1,42 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid d-flex justify-content-between">
+    <!-- Logo stays on the left -->
+    <a class="navbar-brand" href="/">
+      <img src="{% static 'images/Logo_croped.png' %}" class="img-fluid mb-3" alt="Logo">
+    </a>
+  
+    <!-- Collapsible toggle for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Centered links with even spacing -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+      <ul class="navbar-nav d-flex justify-content-evenly w-100 px-5 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'home' %}active{% endif %}" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'about_us' %}active{% endif %}" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'services' %}active{% endif %}" href="#">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'ebooks' %}active{% endif %}" href={% url "books:book-list" %}>Ebooks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'blogs' %}active{% endif %}" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'workshops' %}active{% endif %}" href="#">Workshops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if active == 'contact_us' %}active{% endif %}" href="/contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

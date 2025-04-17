@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "navbar.html" %}
+<link rel="stylesheet" href="{% static "css/beginner_to_pro.css" %}">
+
+<div class="container mt-5">
+
+    <!-- For Beginners and Experienced Professionals Section -->
+    <section>
+        <div class="row mb-5">
+            <!-- For Beginners -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h4>For Beginners: “I’m unsure where to start.”</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>✔ Gain a deep understanding of your niche and its significance.</li>
+                            <li>✔ Step-by-step guidance to help you identify and define your ideal niche.</li>
+                            <li>✔ Access to proven tools and templates for seamless decision-making.</li>
+                            <li>✔ Build your confidence and clarity to start your entrepreneurial journey without feeling overwhelmed.</li>
+                            <li>✔ Walk away with a clear, actionable roadmap to convert your expertise into a successful business.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Experienced Professionals -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h4>For Experienced Professionals: “I know my niche, but I need a strategic plan.”</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>✔ Refine and optimize your niche for greater market impact.</li>
+                            <li>✔ Develop a tailored growth strategy that aligns with your business objectives.</li>
+                            <li>✔ Explore advanced monetization techniques, including product offerings and coaching services.</li>
+                            <li>✔ Position your brand for scalability and long-term success through expert insights.</li>
+                            <li>✔ Receive actionable feedback and strategic direction based on your unique business journey.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-container">
+        <h2 class="section-title">Take the Next Step in Your Business Journey</h2>
+        <p><strong>Book your FREE 15-minute clarity call to discuss your specific needs.</strong></p>
+        <a href="https://calendly.com/your-link" class="btn cta-button btn-lg">Schedule Your Free Call</a>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="cta-container my-5">
+        <p><strong>💡 Need a more tailored approach? Let’s customize your strategy.</strong></p>
+        <p><strong>Our goal is to guide you through every stage of your business growth, ensuring you have the tools and clarity needed to succeed.</strong></p>
+        <p><strong>Whether you're just starting out or looking to scale, we’re here to provide the support and expertise you need to take your business to the next level.</strong></p>
+        <a href="https://calendly.com/your-link" class="btn btn-outline-primary btn-lg">Book Your Free Clarity Call</a>
+    </section>
+
+</div>
+{% endblock content %}

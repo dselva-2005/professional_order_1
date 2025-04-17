@@ -1,0 +1,14 @@
+.navbar-brand{
+    width: 10%;
+}
+
+.navbar{
+    background-color: white;
+}
+
+
+@media (max-width:480px){
+    .navbar-brand{
+        width: 30%;
+    }
+}

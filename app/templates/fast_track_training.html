@@ -1,0 +1,634 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "navbar.html" %}
+  <style>
+    .section-container {
+      border: 1px solid #dee2e6;
+    }
+
+    .content-section {
+
+      display: none;
+      padding: 1.5rem;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+  </style>
+<body class="p-4">
+
+  <!-- Buttons -->
+  <div class="d-flex justify-content-center gap-3 mb-4">
+    <button class="btn btn-outline-primary" onclick="showSection('section1')">Section 1</button>
+    <button class="btn btn-outline-primary" onclick="showSection('section2')">Section 2</button>
+    <button class="btn btn-outline-primary" onclick="showSection('section3')">Section 3</button>
+    <button class="btn btn-outline-primary" onclick="showSection('section4')">Section 4</button>
+  </div>
+
+  <!-- Section Container -->
+  <section class="container">
+    <div id="section1" class="content-section active bg-white rounded shadow p-4 m-4">
+        <!-- Heading -->
+        <h2 class="mb-3">🚀 Earn From What You Know — <span class="text-primary">The Niche Navigator</span></h2>
+        <p class="lead">
+          Unlock the power of digital tools with our focused 1-on-1 training sessions designed just for you.
+          In just 3 hours, master Meta Ads, Google Ads, Canva, and how to position yourself as a successful coach/digital trainer.
+          Walk away with clarity, confidence, and a roadmap to launch your journey.
+        </p>
+      
+        <!-- Why Should You Apply -->
+        <div class="mt-4">
+          <h4 class="text-secondary">💡 Why Should You Apply?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              You’ve spent years gathering knowledge but don’t know how to monetize it. This session shows how to use what you already know to build a business.
+            </li>
+            <li class="list-group-item">
+              Feeling stuck picking a niche? This training guides you step-by-step to find a niche that feels right and is profitable.
+            </li>
+            <li class="list-group-item">
+              Done guessing? Get a proven framework with clarity, focus, and direction to move forward with purpose.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Duration -->
+        <div class="mt-4">
+          <h5 class="text-primary"><i class="bi bi-clock"></i> Total Duration: 3 Hours</h5>
+        </div>
+      
+        <!-- Training Breakdown -->
+        <div class="mt-3">
+          <h4 class="text-secondary">📚 Training Outline</h4>
+          <ol class="list-group list-group-numbered list-group-flush">
+            <li class="list-group-item">What is a Niche? (Definition, Examples, Broad vs. Micro)</li>
+            <li class="list-group-item">Why Are Niches Important for Online Coaching?</li>
+            <li class="list-group-item">Key Considerations When Selecting a Niche</li>
+            <li class="list-group-item">Finding a Monetizing Niche (Google Trends, Ubersuggest, etc.)</li>
+            <li class="list-group-item">How to Validate a Niche (Market Potential, Keyword Research)</li>
+            <li class="list-group-item">Types of Niches (Broad vs Micro, Niche Topics)</li>
+            <li class="list-group-item">Monetization Strategies (Products, Affiliate, Consulting)</li>
+            <li class="list-group-item">Which Strategy Is Right for You + Best Practices</li>
+          </ol>
+        </div>
+      
+        <!-- CTA Buttons -->
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <a href="https://calendly.com/your-link" class="btn btn-primary btn-lg" target="_blank">
+            Book 3 Hour Session
+          </a>
+          <a href="https://calendly.com/your-link" class="btn btn-outline-secondary btn-lg" target="_blank">
+            Book Free 15-min Clarity Call
+          </a>
+        </div>
+      
+        <!-- Who is this for -->
+        <div class="mt-5">
+          <h4 class="text-secondary">🧠 Who Is This For?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✔️ Women looking to monetize their skill</li>
+            <li class="list-group-item">✔️ Part-time & full-time professionals</li>
+            <li class="list-group-item">✔️ Entrepreneurs & small business owners</li>
+            <li class="list-group-item">✔️ Startups & side hustlers</li>
+            <li class="list-group-item">✔️ Influencers & content creators</li>
+            <li class="list-group-item">✔️ Anyone ready to build a brand around their skills</li>
+          </ul>
+        </div>
+      
+        <!-- Benefits -->
+        <div class="mt-4">
+          <h4 class="text-secondary">🌟 How Will It Benefit You?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✅ Gain clarity on your niche and audience</li>
+            <li class="list-group-item">✅ Validate your niche with market demand</li>
+            <li class="list-group-item">✅ Learn multiple monetization options</li>
+            <li class="list-group-item">✅ Avoid mistakes and follow a proven framework</li>
+            <li class="list-group-item">✅ Build a niche business with confidence</li>
+          </ul>
+        </div>
+      
+        <!-- What You Get -->
+        <div class="mt-4">
+          <h4 class="text-secondary">🎁 What Will You Get?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✅ 3 hours of expert-led, hands-on training</li>
+            <li class="list-group-item">✅ A clearly defined and validated niche</li>
+            <li class="list-group-item">✅ Roadmap to monetize your niche</li>
+            <li class="list-group-item">✅ A mini project to apply your skills</li>
+            <li class="list-group-item">✅ Certificate of Completion</li>
+          </ul>
+        </div>
+    </div>
+    <div id="section2" class="content-section bg-white rounded shadow p-4 m-4">
+        <!-- Heading -->
+        <h2 class="mb-3">📈 Mastering <span class="text-primary">Meta & Google Ads</span>: From Setup to Sales</h2>
+        <p class="lead">
+          This hands-on training helps you understand, launch, and optimize Meta and Google Ads like a pro.
+          Whether you're a beginner or freelancer, you'll learn everything from campaign setup to conversions in just 3 hours.
+        </p>
+      
+        <!-- Why Should You Apply -->
+        <div class="mt-4">
+          <h4 class="text-secondary">💡 Why Should You Apply?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Paid ads are the fastest way to gain leads and sales—if done right. This course prevents costly mistakes.</li>
+            <li class="list-group-item">You'll learn practical skills to stop boosting blindly and start strategic campaigns that work.</li>
+            <li class="list-group-item">Perfect for freelancers or business owners who want to control and scale their ads confidently.</li>
+          </ul>
+        </div>
+      
+        <!-- You Should Apply If -->
+        <div class="mt-4">
+          <h5 class="text-primary">✅ You Should Apply If You...</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✔️ Want to run real campaigns, not just boost posts</li>
+            <li class="list-group-item">✔️ Are tired of outsourcing without understanding ads</li>
+            <li class="list-group-item">✔️ Want to freelance or offer ad services to clients</li>
+            <li class="list-group-item">✔️ Need clarity on when to use Meta vs Google Ads</li>
+            <li class="list-group-item">✔️ Want to master campaign setup, targeting, and optimization</li>
+          </ul>
+        </div>
+      
+        <!-- Duration -->
+        <div class="mt-4">
+          <h5 class="text-primary"><i class="bi bi-clock"></i> Total Duration: 3 Hours</h5>
+        </div>
+      
+        <!-- Training Outline -->
+        <div class="mt-3">
+          <h4 class="text-secondary">📚 Training Outline</h4>
+          <ol class="list-group list-group-numbered list-group-flush">
+            <li class="list-group-item">
+              <strong>Meta Ads Basics:</strong> Facebook Business setup, Instagram linking, Meta Pixel installation, campaign structure, objectives, audience targeting.
+            </li>
+            <li class="list-group-item">
+              <strong>Google Ads Fundamentals:</strong> Campaign & Ad structure, keyword research, writing ad copy, search/display/youtube campaigns.
+            </li>
+            <li class="list-group-item">
+              <strong>Optimization & Strategy:</strong> A/B testing, scaling, retargeting, quality score, match types, budget split strategy.
+            </li>
+            <li class="list-group-item">
+              <strong>Tools & Resources:</strong> Canva, ChatGPT, Meta Creative Hub, Meta Blueprint, Skillshop.
+            </li>
+          </ol>
+        </div>
+      
+        <!-- CTA Buttons -->
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <a href="https://calendly.com/your-link" class="btn btn-primary btn-lg" target="_blank">
+            Book 3 Hour Session
+          </a>
+          <a href="https://calendly.com/your-link" class="btn btn-outline-secondary btn-lg" target="_blank">
+            Book Free 15-min Clarity Call
+          </a>
+        </div>
+      
+        <!-- Who Is This For -->
+        <div class="mt-5">
+          <h4 class="text-secondary">👥 Who Is This For?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✔️ Aspiring digital marketers</li>
+            <li class="list-group-item">✔️ Freelancers, solopreneurs & agency owners</li>
+            <li class="list-group-item">✔️ Women restarting or growing online careers</li>
+            <li class="list-group-item">✔️ Coaches, course creators & consultants</li>
+            <li class="list-group-item">✔️ E-commerce store owners</li>
+            <li class="list-group-item">✔️ Influencers & personal brand builders</li>
+          </ul>
+        </div>
+      
+        <!-- Benefits -->
+        <div class="mt-4">
+          <h4 class="text-secondary">🌟 How Will It Benefit You?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✅ Gain clarity on ad strategy and platform choice</li>
+            <li class="list-group-item">✅ Launch your first campaign with confidence</li>
+            <li class="list-group-item">✅ Learn to optimize campaigns for high ROI</li>
+            <li class="list-group-item">✅ Understand targeting, budget, and copy structure</li>
+            <li class="list-group-item">✅ Start freelancing or scaling your own brand</li>
+          </ul>
+        </div>
+      
+        <!-- What You Get -->
+        <div class="mt-4">
+          <h4 class="text-secondary">🎁 What Will You Get?</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✅ 3 hours of action-first, expert-led training</li>
+            <li class="list-group-item">✅ Ad strategy and campaign-building clarity</li>
+            <li class="list-group-item">✅ Real ad project you can showcase</li>
+            <li class="list-group-item">✅ Tools and templates for future use</li>
+            <li class="list-group-item">✅ Certificate of Completion</li>
+          </ul>
+        </div>
+    </div>
+
+    <div id="section2" class="content-section bg-white rounded shadow p-4 m-4">
+    <!-- Heading -->
+    <h2 class="mb-3">📈 Mastering <span class="text-primary">Meta & Google Ads</span>: From Setup to Sales</h2>
+    <p class="lead">
+        This hands-on training helps you understand, launch, and optimize Meta and Google Ads like a pro.
+        Whether you're a beginner or freelancer, you'll learn everything from campaign setup to conversions in just 3 hours.
+    </p>
+    
+    <!-- Why Should You Apply -->
+    <div class="mt-4">
+        <h4 class="text-secondary">💡 Why Should You Apply?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">Paid ads are the fastest way to gain leads and sales—if done right. This course prevents costly mistakes.</li>
+        <li class="list-group-item">You'll learn practical skills to stop boosting blindly and start strategic campaigns that work.</li>
+        <li class="list-group-item">Perfect for freelancers or business owners who want to control and scale their ads confidently.</li>
+        </ul>
+    </div>
+    
+    <!-- You Should Apply If -->
+    <div class="mt-4">
+        <h5 class="text-primary">✅ You Should Apply If You...</h5>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✔️ Want to run real campaigns, not just boost posts</li>
+        <li class="list-group-item">✔️ Are tired of outsourcing without understanding ads</li>
+        <li class="list-group-item">✔️ Want to freelance or offer ad services to clients</li>
+        <li class="list-group-item">✔️ Need clarity on when to use Meta vs Google Ads</li>
+        <li class="list-group-item">✔️ Want to master campaign setup, targeting, and optimization</li>
+        </ul>
+    </div>
+    
+    <!-- Duration -->
+    <div class="mt-4">
+        <h5 class="text-primary"><i class="bi bi-clock"></i> Total Duration: 3 Hours</h5>
+    </div>
+    
+    <!-- Training Outline -->
+    <div class="mt-3">
+        <h4 class="text-secondary">📚 Training Outline</h4>
+        <ol class="list-group list-group-numbered list-group-flush">
+        <li class="list-group-item">
+            <strong>Meta Ads Basics:</strong> Facebook Business setup, Instagram linking, Meta Pixel installation, campaign structure, objectives, audience targeting.
+        </li>
+        <li class="list-group-item">
+            <strong>Google Ads Fundamentals:</strong> Campaign & Ad structure, keyword research, writing ad copy, search/display/youtube campaigns.
+        </li>
+        <li class="list-group-item">
+            <strong>Optimization & Strategy:</strong> A/B testing, scaling, retargeting, quality score, match types, budget split strategy.
+        </li>
+        <li class="list-group-item">
+            <strong>Tools & Resources:</strong> Canva, ChatGPT, Meta Creative Hub, Meta Blueprint, Skillshop.
+        </li>
+        </ol>
+    </div>
+    
+    <!-- CTA Buttons -->
+    <div class="mt-4 d-flex flex-wrap gap-3">
+        <a href="https://calendly.com/your-link" class="btn btn-primary btn-lg" target="_blank">
+        Book 3 Hour Session
+        </a>
+        <a href="https://calendly.com/your-link" class="btn btn-outline-secondary btn-lg" target="_blank">
+        Book Free 15-min Clarity Call
+        </a>
+    </div>
+    
+    <!-- Who Is This For -->
+    <div class="mt-5">
+        <h4 class="text-secondary">👥 Who Is This For?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✔️ Aspiring digital marketers</li>
+        <li class="list-group-item">✔️ Freelancers, solopreneurs & agency owners</li>
+        <li class="list-group-item">✔️ Women restarting or growing online careers</li>
+        <li class="list-group-item">✔️ Coaches, course creators & consultants</li>
+        <li class="list-group-item">✔️ E-commerce store owners</li>
+        <li class="list-group-item">✔️ Influencers & personal brand builders</li>
+        </ul>
+    </div>
+    
+    <!-- Benefits -->
+    <div class="mt-4">
+        <h4 class="text-secondary">🌟 How Will It Benefit You?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✅ Gain clarity on ad strategy and platform choice</li>
+        <li class="list-group-item">✅ Launch your first campaign with confidence</li>
+        <li class="list-group-item">✅ Learn to optimize campaigns for high ROI</li>
+        <li class="list-group-item">✅ Understand targeting, budget, and copy structure</li>
+        <li class="list-group-item">✅ Start freelancing or scaling your own brand</li>
+        </ul>
+    </div>
+    
+    <!-- What You Get -->
+    <div class="mt-4">
+        <h4 class="text-secondary">🎁 What Will You Get?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✅ 3 hours of action-first, expert-led training</li>
+        <li class="list-group-item">✅ Ad strategy and campaign-building clarity</li>
+        <li class="list-group-item">✅ Real ad project you can showcase</li>
+        <li class="list-group-item">✅ Tools and templates for future use</li>
+        <li class="list-group-item">✅ Certificate of Completion</li>
+        </ul>
+    </div>
+    </div>
+            
+    <div id="section3" class="content-section bg-white rounded shadow p-4 m-4">
+    <!-- Heading -->
+    <h2 class="mb-3">🚀 Boost Your Brand Visibility: <span class="text-primary">SEO, Instagram SEO & Canva Essentials</span></h2>
+    <p class="lead">
+        Because in today’s digital world, visibility is everything. 
+        Whether you’re launching a business, growing a side hustle, or building your personal brand—if people can’t find you online, they can’t buy from you, follow you, or trust you.
+        This workshop gives you the essential tools to stand out online—even if you're starting from scratch.
+    </p>
+
+    <!-- Why Should You Apply -->
+    <div class="mt-4">
+        <h4 class="text-secondary">💡 Why Should You Apply?</h4>
+        <p>
+        This workshop teaches you how to rank on Google, optimize your Instagram profile, and create stunning content using Canva, all with no prior experience required. 
+        You'll learn to boost your online presence, create SEO-optimized content, and build your digital brand.
+        </p>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✔️ Rank on Google with smart SEO strategies</li>
+        <li class="list-group-item">✔️ Show up in Instagram search and attract the right followers</li>
+        <li class="list-group-item">✔️ Design scroll-stopping content using Canva without being a designer</li>
+        <li class="list-group-item">✔️ Write optimized captions and choose hashtags that drive engagement</li>
+        <li class="list-group-item">✔️ Create your own website or landing page—no tech skills needed</li>
+        </ul>
+        <p class="mt-4">
+        Plus, you’ll:
+        </p>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">🎯 Stop wasting time guessing what works</li>
+        <li class="list-group-item">💡 Gain clarity on tools & trends that matter</li>
+        <li class="list-group-item">💰 Save money by doing it yourself</li>
+        <li class="list-group-item">💼 Build a digital portfolio with confidence</li>
+        <li class="list-group-item">📈 See actual results from your content</li>
+        </ul>
+    </div>
+
+    <!-- Duration -->
+    <div class="mt-4">
+        <h5 class="text-primary"><i class="bi bi-clock"></i> Total Duration: 3 Hours</h5>
+    </div>
+
+    <!-- Training Outline -->
+    <div class="mt-3">
+        <h4 class="text-secondary">📚 Training Outline</h4>
+        <h5 class="text-primary">🔹 Session 1: SEO Essentials – Be Found on Google</h5>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>What is SEO & Why It Matters</strong></li>
+        <li class="list-group-item">Organic traffic vs Paid traffic</li>
+        <li class="list-group-item">How search engines work (Google basics)</li>
+        <li class="list-group-item">Keyword Research Simplified</li>
+        <li class="list-group-item">Types of keywords: Short-tail, long-tail</li>
+        <li class="list-group-item">Free tools: Google Keyword Planner, UberSuggest, Answer the Public</li>
+        <li class="list-group-item">Intent-based keywords (commercial, informational)</li>
+        <li class="list-group-item"><strong>On-Page SEO Fundamentals</strong></li>
+        <li class="list-group-item">Optimizing title tags, meta descriptions, headers (H1, H2)</li>
+        <li class="list-group-item">Image alt text and internal linking</li>
+        <li class="list-group-item">URL structure and content freshness</li>
+        <li class="list-group-item"><strong>Off-Page SEO Basics</strong></li>
+        <li class="list-group-item">What is link building?</li>
+        <li class="list-group-item">Introduction to local SEO and Google Business Profile</li>
+        <li class="list-group-item">Free Tools & Extensions (SEO Minion, MozBar, Google Search Console basics)</li>
+        </ul>
+        <p><strong>🔹 Q&A / Mini Activity:</strong> Analyze one sample website</p>
+
+        <h5 class="text-primary mt-4">🔹 Session 2: Instagram SEO – Show Up & Stand Out</h5>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>What is Instagram SEO?</strong></li>
+        <li class="list-group-item">Why Instagram is a search engine too</li>
+        <li class="list-group-item">Algorithm basics (Reels, Explore, Hashtags)</li>
+        <li class="list-group-item"><strong>Profile Optimization for Discovery</strong></li>
+        <li class="list-group-item">Optimizing username, name field, bio with keywords</li>
+        <li class="list-group-item">Choosing the right category</li>
+        <li class="list-group-item">Link in bio tools</li>
+        <li class="list-group-item"><strong>Hashtag Strategy & Caption Crafting</strong></li>
+        <li class="list-group-item">Niche vs trending hashtags</li>
+        <li class="list-group-item">Writing engaging, keyword-friendly captions</li>
+        <li class="list-group-item"><strong>Content SEO Techniques</strong></li>
+        <li class="list-group-item">Using keywords in image alt-text and Reels</li>
+        <li class="list-group-item">How to rank in the Explore page</li>
+        <li class="list-group-item">The importance of consistency & saves/shares</li>
+        <li class="list-group-item"><strong>Analytics for Optimization</strong></li>
+        <li class="list-group-item">Using Instagram Insights for reach, saves, profile visits</li>
+        <li class="list-group-item">Testing different content types: Reels, Carousels, Lives</li>
+        </ul>
+        <p><strong>🔹 Q&A / Quick Optimization Challenge:</strong> Rewrite a bio & caption using keywords</p>
+
+        <h5 class="text-primary mt-4">🔹 Session 3: Canva Essentials – Design Like a Pro (No Experience Needed)</h5>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Getting Started with Canva</strong></li>
+        <li class="list-group-item">Free vs Pro</li>
+        <li class="list-group-item">Overview of the interface, templates, folders</li>
+        <li class="list-group-item"><strong>Designing SEO-Friendly Visuals</strong></li>
+        <li class="list-group-item">Creating YouTube thumbnails, blog banners, Pinterest pins</li>
+        <li class="list-group-item">Adding keywords to image file names before download</li>
+        <li class="list-group-item"><strong>Instagram Content Creation</strong></li>
+        <li class="list-group-item">Designing Reels covers, Carousels, and Stories</li>
+        <li class="list-group-item">Using brand kit, resizing for multiple platforms</li>
+        <li class="list-group-item">Animations & transitions</li>
+        <li class="list-group-item"><strong>Time-Saving Tools in Canva</strong></li>
+        <li class="list-group-item">Magic Resize, Brand Kit, AI features (Magic Write, Magic Eraser)</li>
+        <li class="list-group-item">Content Planner & Scheduling (if using Canva Pro)</li>
+        <li class="list-group-item"><strong>Mini Project:</strong> Create 1 Instagram post + SEO-optimized caption + hashtag set</li>
+        <li class="list-group-item"><strong>Website Creation Using Canva</strong></li>
+        <li class="list-group-item">Basic Website Creation on Canva</li>
+        </ul>
+
+        <p><strong>🔹 Hands-on mini project included – earn your certificate upon completion.</strong></p>
+        <p><strong>Final Q&A / Showcase Student Work (Optional) (10 mins)</strong></p>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="mt-4 d-flex flex-wrap gap-3">
+        <a href="https://calendly.com/your-link" class="btn btn-primary btn-lg" target="_blank">
+        Book 3 Hour Session
+        </a>
+        <a href="https://calendly.com/your-link" class="btn btn-outline-secondary btn-lg" target="_blank">
+        Book Free 15-min Clarity Call
+        </a>
+    </div>
+
+    <!-- Who Is This For -->
+    <div class="mt-5">
+        <h4 class="text-secondary">💡 Who Is This For?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✔️ Women looking to build their digital presence</li>
+        <li class="list-group-item">✔️ Part-time & full-time professionals</li>
+        <li class="list-group-item">✔️ Entrepreneurs & small business owners</li>
+        <li class="list-group-item">✔️ Startups & side hustlers</li>
+        <li class="list-group-item">✔️ Influencers & content creators</li>
+        <li class="list-group-item">✔️ Beginners passionate about digital marketing</li>
+        <li class="list-group-item">✔️ Anyone eager to learn practical, impactful skills</li>
+        </ul>
+    </div>
+
+    <!-- Benefits -->
+    <div class="mt-4">
+        <h4 class="text-secondary">💥 How Will It Benefit You?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✅ Build a strong online presence for yourself or your brand</li>
+        <li class="list-group-item">✅ Learn practical SEO and Instagram techniques that actually work</li>
+        <li class="list-group-item">✅ Create eye-catching designs and content using Canva</li>
+        <li class="list-group-item">✅ Understand the tools and strategies to drive organic traffic</li>
+        <li class="list-group-item">✅ Save time and money by doing it yourself – confidently!</li>
+        </ul>
+    </div>
+
+    <!-- What You Get -->
+    <div class="mt-4">
+        <h4 class="text-secondary">🎁 What Will You Get?</h4>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">✅ 3 hours of expert-led, hands-on training</li>
+        <li class="list-group-item">✅ Actionable strategies you can implement immediately</li>
+        <li class="list-group-item">✅ Access to free tools and resources</li>
+        <li class="list-group-item">✅ A mini project to apply your skills</li>
+        <li class="list-group-item">✅ Certificate of Completion</li>
+        </ul>
+    </div>
+    </div>
+
+    <div id="section4" class="content-section bg-white rounded shadow p-4 m-4">
+        <!-- Heading -->
+        <h2 class="mb-3"><span class="text-primary">🎨 Canva Mastery</span>: Design, Edit & Publish Like a Pro</h2>
+        <p class="lead">
+            Because great design isn’t just for designers anymore.  
+            With Canva, you can create like a pro—even if you’ve never touched a design tool before with zero experience.  
+            This workshop gives you the confidence, skills, and tools to design, edit, and publish high-impact content for personal branding, business, or freelancing—all in just 3 hours!
+        </p>
+        
+        <!-- Why Should You Apply -->
+        <div class="mt-4">
+            <h4 class="text-secondary">💡 Why Should You Apply?</h4>
+            <p>
+                You should apply if you:
+            </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✔️ Want to stop relying on others for simple design tasks</li>
+                <li class="list-group-item">✔️ Struggle with making your visuals look “professional”</li>
+                <li class="list-group-item">✔️ Have a brand, biz, or content idea but don’t know how to present it beautifully</li>
+                <li class="list-group-item">✔️ Want to create your own website without hiring a developer</li>
+                <li class="list-group-item">✔️ Dream of offering Canva design as a freelance skill or side hustle</li>
+            </ul>
+            <p><strong>Consultation Languages</strong>: English, Tamil, Hindi, Telugu</p>
+        </div>
+        
+        <!-- Duration -->
+        <div class="mt-4">
+            <h5 class="text-primary"><i class="bi bi-clock"></i> Total Duration: 3 Hours</h5>
+        </div>
+        
+        <!-- Session Breakdown -->
+        <div class="mt-4">
+            <h4 class="text-secondary">📚 Session Breakdown</h4>
+            
+            <!-- Session 1 -->
+            <div class="mt-3">
+                <h5 class="text-primary">🔹 Session 1: Canva Design Basics + Website Creation</h5>
+                <p><strong>Learning Outcomes:</strong></p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Navigate Canva's dashboard</li>
+                    <li class="list-group-item">Create social posts & layouts</li>
+                    <li class="list-group-item">Build and publish a one-page website</li>
+                </ul>
+                <p><strong>Topics Covered:</strong></p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Introduction to Canva: Free vs Pro, Templates overview, Dashboard walkthrough</li>
+                    <li class="list-group-item">Design Fundamentals: Layouts, grids, white space, alignment, Fonts & typography basics, Brand colors & consistency, Uploading brand logos/images</li>
+                    <li class="list-group-item">Quick Design Projects: Create 1 Instagram post or YouTube thumbnail, Exporting as PNG/JPG with correct dimensions</li>
+                    <li class="list-group-item">Website Creation in Canva: Choose “Website” design type, Adding pages/sections (About, Contact, Services), Hyperlinking buttons, Adding contact form & social links, Publishing as a live website (Canva domain or custom domain)</li>
+                </ul>
+                <p><strong>Mini Task:</strong> Design your own personal one-page site</p>
+            </div>
+            
+            <!-- Session 2 -->
+            <div class="mt-4">
+                <h5 class="text-primary">🔹 Session 2: Canva Presentations + Video Editing</h5>
+                <p><strong>Learning Outcomes:</strong></p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Create professional presentations</li>
+                    <li class="list-group-item">Edit videos for social media & branding</li>
+                    <li class="list-group-item">Add music, transitions, animations</li>
+                </ul>
+                <p><strong>Topics Covered:</strong></p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Presentation Slide Creation: Choosing presentation templates, Title, content, and visual slide formats, Animations, transitions, and speaker notes, Exporting as PDF or presenting directly from Canva</li>
+                    <li class="list-group-item">Video Editing in Canva: Importing video clips (own or Canva stock), Trimming, splitting, and arranging clips, Adding text, music, animations, Using Canva’s AI features (beat sync, voice-over tools), Export settings for MP4</li>
+                    <li class="list-group-item">Create a Simple Video Project: Example: Instagram Reel, YouTube Intro, or product teaser</li>
+                </ul>
+            </div>
+            
+            <!-- Session 3 -->
+            <div class="mt-4">
+                <h5 class="text-primary">🔹 Session 3: Branding, Productivity Tools & Final Project</h5>
+                <p><strong>Learning Outcomes:</strong></p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Apply brand kit</li>
+                    <li class="list-group-item">Use AI tools & productivity hacks</li>
+                    <li class="list-group-item">Complete and showcase a real-life design project</li>
+                </ul>
+                <p><strong>Topics Covered:</strong></p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Brand Kit & Visual Identity: Creating or applying a Brand Kit, Using the kit across different designs for consistency</li>
+                    <li class="list-group-item">Canva Productivity Tools & AI Features: Magic Resize, Magic Write for content & captions, Content Planner & post scheduler, Folders and version control</li>
+                    <li class="list-group-item">Final Project Brief: Complete one project—1 social media post, 1 short video or Reel, 1 slide from a pitch deck, 1-page website mockup</li>
+                </ul>
+                <p><strong>Live Review & Sharing:</strong> Showcase student projects</p>
+                <p><strong>Certification:</strong> A certificate upon completion</p>
+            </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+        <div class="mt-4 d-flex flex-wrap gap-3">
+            <a href="https://calendly.com/your-link" class="btn btn-primary btn-lg" target="_blank">
+                Book 3 Hour Session
+            </a>
+            <a href="https://calendly.com/your-link" class="btn btn-outline-secondary btn-lg" target="_blank">
+                Book Free 15-min Clarity Call
+            </a>
+        </div>
+        
+        <!-- Who is this for -->
+        <div class="mt-5">
+            <h4 class="text-secondary">👩‍💻 Who Is This For?</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✔️ Women eager to build a personal or professional brand</li>
+                <li class="list-group-item">✔️ Part-time & full-time professionals looking to upskill</li>
+                <li class="list-group-item">✔️ Small business owners & entrepreneurs</li>
+                <li class="list-group-item">✔️ Influencers & content creators</li>
+                <li class="list-group-item">✔️ Startups & side hustlers</li>
+                <li class="list-group-item">✔️ Beginners with a passion for digital marketing</li>
+            </ul>
+        </div>
+        
+        <!-- How Will It Benefit You -->
+        <div class="mt-4">
+            <h4 class="text-secondary">🌟 How Will It Benefit You?</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✅ Design stunning visuals that grab attention</li>
+                <li class="list-group-item">✅ Create professional presentations and social media content</li>
+                <li class="list-group-item">✅ Publish your own mini website – no coding needed</li>
+                <li class="list-group-item">✅ Save time with Canva’s powerful productivity and AI tools</li>
+                <li class="list-group-item">✅ Build a consistent visual brand across platforms</li>
+                <li class="list-group-item">✅ Gain confidence in handling design tasks independently</li>
+            </ul>
+        </div>
+        
+        <!-- What You Get -->
+        <div class="mt-4">
+            <h4 class="text-secondary">🎁 What Will You Get?</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✅ 3 hours of expert-led, hands-on training</li>
+                <li class="list-group-item">✅ Actionable strategies you can implement immediately</li>
+                <li class="list-group-item">✅ Access to free tools and resources</li>
+                <li class="list-group-item">✅ A mini project to apply your skills</li>
+                <li class="list-group-item">✅ Certificate of Completion</li>
+            </ul>
+        </div>
+    </div>
+    
+  </section>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+{% endblock content %}
