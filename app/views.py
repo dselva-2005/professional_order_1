@@ -19,6 +19,9 @@ def beginner_to_pro(request):
 def fast_track_training(request):
     return render(request,'fast_track_training.html')
 
+def workshops(request):
+    return render(request,'workshops.html')
+
 def live_session(request):
     return render(request,'live_session.html')
 

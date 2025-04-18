@@ -17,12 +17,14 @@
             {% for book in object_list %}
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100 border">
-                        <div class="ratio ratio-4x3">
-                            <embed type="application/pdf" src="/media/{{ book.book }}" class="rounded-top" />
-                        </div>
+                            <img class="img-fluid mb-4" src="/media/{{ book.cover_page }}" class="rounded-top" />
+                        {% comment %} <header class="text-center mb-5">
+                            <img src="{% static 'images/service_creatives_rectangle/3.png' %}" alt="Business Strategy" class="img-fluid mb-4">
+                          </header> {% endcomment %}
                         <div class="card-body">
                             <h5 class="card-title text-primary">{{ book.title }}</h5>
                         </div>
+                        <button class="drive_download btn btn-success"> Buy Now</button>
                     </div>
                 </div>
             {% endfor %}
@@ -33,11 +35,6 @@
         </div>
     {% endif %}
 
-    <div class="text-center mt-5">
-        <button id="uploadBtn" class="btn btn-outline-primary btn-lg">
-            <i class="fas fa-cloud-upload-alt me-2"></i>Upload Selected PDF to Drive
-        </button>
-    </div>
 </div>
 
 <script>
@@ -148,9 +145,11 @@
 
         loadPickerApi();
 
-        document.getElementById('uploadBtn').addEventListener('click', () => {
-            tokenClient.requestAccessToken();
-        });
+        Array.from(document.getElementsByClassName('drive_download')).forEach((element)=>{
+            element.addEventListener('click', () => {
+                tokenClient.requestAccessToken();
+            });
+        })
     };
 </script>
 {% endblock content %}

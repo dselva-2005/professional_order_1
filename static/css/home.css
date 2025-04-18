@@ -13,6 +13,11 @@ footer a:hover {
     height: 10vw;
     object-fit: contain;
 }
+#carouselClientImages .carousel-item img {
+    width: 100%;
+    height: 40vw;
+    object-fit: contain;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -46,6 +51,14 @@ html {
     .carousel-item img {
         width: 100%;
         height: 20vw;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:1200px) {
+    #carouselClientImages .carousel-item img {
+        width: 100%;
+        height: 40vw;
         object-fit: contain;
     }
 }

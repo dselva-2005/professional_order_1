@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    {% include "navbar.html" with active='training_programs' %}
+    
+    <div class="row mt-4 mb-4 d-flex flex-wrap justify-content-center" style="min-height: 65vh;">
+        <!-- Left Image Column -->
+        <header class="text-center mb-5">
+            <img src="{% static 'images/service_creatives_rectangle/9.png' %}" alt="Business Strategy" class="img-fluid">
+          </header>
+
+        <!-- Right Text Column -->
+        <div class="col-lg-6 col-12 d-flex p-1 justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-start w-100 h-100 p-5">
+                <h1 class="mb-4">Training Programs</h1>
+                <p class="lead">
+                    We offer dynamic training programs tailored for schools, colleges, and institutions across a variety of essential topics. From soft skills and digital awareness to entrepreneurship and AI-driven job hunting, our sessions are designed to empower students for real-world success.
+                </p>
+                <p class="lead mt-3">
+                    With years of experience in education, corporate training, and digital technology, we bring practical insights and engaging delivery to every session. Our goal is to bridge the gap between academic knowledge and industry expectations.
+                </p>
+                <p class="lead mt-3">
+                    We believe in shaping confident, future-ready individuals who can thrive in any career path they choose.
+                </p>
+                <ul class="mt-3">
+                    <li>Interview Techniques</li>
+                    <li>Soft Skills Training</li>
+                    <li>Presentation Skills</li>
+                    <li>Digital Technology</li>
+                    <li>How to Become an Entrepreneur</li>
+                    <li>Digital Awareness for Schools & Colleges</li>
+                    <li>Resume Writing Skills</li>
+                    <li>Job Hunting using AI</li>
+                    <li>Interpersonal Skills</li>
+                    <li>Ethical Digital Marketing for Students</li>
+                    <li>Grooming Etiquette</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary mt-4">Contact Us</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

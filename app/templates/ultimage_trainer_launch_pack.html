@@ -3,40 +3,13 @@
 
 {% block content %}
 {% include "navbar.html" %}
-<style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      background-color: #0d6efd;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .section {
-      padding: 50px 20px;
-    }
-    .section-title {
-      font-weight: 700;
-      font-size: 1.75rem;
-      margin-bottom: 25px;
-    }
-    .highlight-box {
-      background-color: #fff3cd;
-      border-left: 6px solid #ffc107;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 5px;
-    }
-    .cta {
-      background: #343a40;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-  </style>
+<link rel="stylesheet" href="{% static "css/ultimate_trainer_launch_pack.css" %}">
+
 <div class="container">
 <!-- HERO SECTION -->
+<header class="text-center">
+  <img src="{% static 'images/service_creatives_rectangle/6.png' %}" alt="Business Strategy" class="img-fluid " style="max-height: 300px;">
+</header>
 <section class="hero">
   <h1 class="display-5 fw-bold">🎯 Ultimate Trainer Launch Package</h1>
   <p class="lead mt-3">From niche finalization to scalable monetization, this program is your complete launch system 🚀</p>
