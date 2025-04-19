@@ -2,13 +2,14 @@
 {% load static %}
 {% block content %}
 {% include "navbar.html" %}
-<div class="container py-5">
+<div  class="container-fluid p-3">
     <header class="text-center mb-5">
-        <img src="{% static 'images/service_creatives_rectangle/3.png' %}" alt="Business Strategy" class="img-fluid mb-4" style="max-height: 300px;">
         <h1 class="display-4">3-Hour Business Power Hour Call – Your Complete Growth Plan 🚀</h1>
         <p class="lead text-muted">Monetize any skills - pick your power move!</p>
+        <img src="{% static 'images/service_creatives_rectangle/3.png' %}" alt="Business Strategy" class="img-fluid mb-4">
     </header>
 
+<div class="container">
 
     <!-- Why You Need This Section -->
     <section class="mb-5">
@@ -60,14 +61,28 @@
     </section>
 
     <!-- Book a Session Section -->
-    <section class="text-center mb-5">
-        <h2 class="h3">Book Your Business Power Hour Call Now</h2>
-        <p>Let’s make your business vision a reality! 🚀</p>
-        <a href="https://calendly.com/your-link" class="btn btn-success btn-lg">
+    <section class="text-center mb-5 px-3 px-md-5">
+        <div class="mb-4">
+            <h5 class="text-uppercase text-secondary fw-semibold">More Than Just a Plan!</h5>
+            <p class="fs-5">The 3-hour session can be fully customized to match your specific business needs and goals.</p>
+    
+            <h6 class="fw-bold mt-4">The Outcome?</h6>
+            <ul class="list-unstyled d-inline-block text-start mx-auto" style="max-width: 600px;">
+                <li class="mb-2">✔️ <strong>Clarity</strong> on your niche, positioning & business model</li>
+                <li class="mb-2">✔️ A <strong>content strategy</strong> to grow your clients</li>
+                <li class="mb-2">✔️ A <strong>monetization roadmap</strong> to turn leads into clients</li>
+                <li class="mb-2">✔️ A <strong>step-by-step plan</strong> to execute immediately</li>
+            </ul>
+        </div>
+    
+        <h2 class="h3 fw-bold">Book Your Business Power Hour Call Now</h2>
+        <p class="mb-4 fs-5">🔥 Let’s make your business vision a reality! 🚀</p>
+        <a href="https://calendly.com/your-link" class="btn btn-success btn-lg px-4 py-2">
             Book 3-Hour Business Power Hour Session
         </a>
     </section>
-
+    
+    
     <!-- Free 15-Minute Clarity Call Section -->
     <section class="text-center mb-5">
         <h2 class="h3">Need Something Different? Let’s Customize Your Plan!</h2>
@@ -215,6 +230,7 @@
 
         </div>
     </section>
+</div>
 
 </div>
 {% endblock content %}

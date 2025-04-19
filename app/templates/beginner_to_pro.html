@@ -4,15 +4,15 @@
 {% include "navbar.html" %}
 <link rel="stylesheet" href="{% static "css/beginner_to_pro.css" %}">
 
-<div class="container mt-5">
-    <header class="text-center mb-5">
-        <img src="{% static 'images/service_creatives_rectangle/8.png' %}" alt="Business Strategy" class="img-fluid mb-4" style="max-height: 300px;">
-      </header>
+<header class="text-center mb-5 container-fluid p-3">
+    <img src="{% static 'images/service_creatives_rectangle/8.png' %}" alt="Business Strategy" class="img-fluid mb-4">
+  </header>
+<div class="container-fluid px-5">
     <!-- For Beginners and Experienced Professionals Section -->
     <section>
-        <div class="row mb-5">
+        <div class="row mb-5 d-flex justify-content-evenly">
             <!-- For Beginners -->
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-header bg-success text-white">
                         <h4>For Beginners: “I’m unsure where to start.”</h4>
@@ -30,7 +30,7 @@
             </div>
 
             <!-- For Experienced Professionals -->
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-header bg-success text-white">
                         <h4>For Experienced Professionals: “I know my niche, but I need a strategic plan.”</h4>
@@ -50,14 +50,14 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="cta-container">
+    <section class="container">
         <h2 class="section-title">Take the Next Step in Your Business Journey</h2>
         <p><strong>Book your FREE 15-minute clarity call to discuss your specific needs.</strong></p>
         <a href="https://calendly.com/your-link" class="btn cta-button btn-lg">Schedule Your Free Call</a>
     </section>
 
     <!-- Customization Section -->
-    <section class="cta-container my-5">
+    <section class="container my-5">
         <p><strong>💡 Need a more tailored approach? Let’s customize your strategy.</strong></p>
         <p><strong>Our goal is to guide you through every stage of your business growth, ensuring you have the tools and clarity needed to succeed.</strong></p>
         <p><strong>Whether you're just starting out or looking to scale, we’re here to provide the support and expertise you need to take your business to the next level.</strong></p>
