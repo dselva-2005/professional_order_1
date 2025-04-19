@@ -6,3 +6,107 @@
 .nl{
     list-style: none;
 }
+
+.navbar {
+    font-weight: 500;
+  }
+
+  .nav-link {
+    color: #000;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+  }
+
+  .nav-link:hover {
+    color: #800000;
+    border-bottom: 2px solid #800000;
+  }
+
+  .nav-link.active {
+    color: #800000 !important;
+    border-bottom: 2px solid #800000;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-brand img {
+    max-height: 70px;
+  }
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #800000;
+    border-color: #800000;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #a00000;
+    border-color: #a00000;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    height: 3rem;
+    width: 3rem;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth scroll button icon */
+#backToTopBtn i {
+    font-size: 1.2rem;
+}
+
+.text-maroon {
+    color: #800000;
+}
+
+.footer-link {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #800000;
+    text-decoration: underline;
+}
+
+.social-link {
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #800000;
+}
+
+/* in home.css */
+.btn-maroon {
+    background-color: #800000;
+    color: white;
+    border: none;
+}
+.btn-maroon:hover {
+    background-color: #660000;
+}
+
+.text-maroon{
+    color:maroon;
+}
