@@ -38,35 +38,3 @@ html {
 #main {
     margin-bottom: 80vh;
 }
-@media (max-width:480px) {
-    #fixed-img {
-        position: fixed;
-        height: 100vh;
-        z-index: -10;
-        top: 273px;
-    }
-    #main {
-        margin-bottom: 55vh;
-    }
-    .carousel-item img {
-        width: 100%;
-        height: 20vw;
-        object-fit: contain;
-    }
-}
-
-@media (max-width:1200px) {
-    #carouselClientImages .carousel-item img {
-        width: 100%;
-        height: 40vw;
-        object-fit: contain;
-    }
-}
-@keyframes fadeAndSlide {
-    from { transform: translateY(70px); }
-    to { transform: translateY(0px); }
-}
-.scroll-animate {
-    animation: fadeAndSlide 1s linear;
-    animation-timeline: scroll(root);
-}

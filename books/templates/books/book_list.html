@@ -13,18 +13,15 @@
     </div>
 
     {% if object_list %}
-        <div class="row g-4">
+        <div class="row">
             {% for book in object_list %}
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100 border">
-                            <img class="img-fluid mb-4" src="/media/{{ book.cover_page }}" class="rounded-top" />
-                        {% comment %} <header class="text-center mb-5">
-                            <img src="{% static 'images/service_creatives_rectangle/3.png' %}" alt="Business Strategy" class="img-fluid mb-4">
-                          </header> {% endcomment %}
+                    <div class="card shadow-sm border">
+                            <img class="mb-4" src="/media/{{ book.cover_page }}" class="rounded-top" />
                         <div class="card-body">
-                            <h5 class="card-title text-primary">{{ book.title }}</h5>
+                            <h5 class="card-title text-maroon">{{ book.title }}</h5>
                         </div>
-                        <button class="drive_download btn btn-success"> Buy Now</button>
+                        <button class="drive_download btn btn-maroon"> Buy Now</button>
                     </div>
                 </div>
             {% endfor %}

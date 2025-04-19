@@ -42,7 +42,8 @@
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  "Ubuntu", sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -104,9 +105,69 @@ body {
     border: none;
 }
 .btn-maroon:hover {
-    background-color: #660000;
+    background-color: #ca1414;
+    color: white;
 }
 
 .text-maroon{
     color:maroon;
+}
+
+.btn-outline-maroon{
+    border-color:maroon;
+    color: maroon;
+}
+
+.btn-outline-maroon:hover{
+    background:maroon;
+    color: white;
+}
+
+.bg-maroon{
+    background-color: maroon;
+}
+
+.csection-title{
+    color: maroon; 
+    margin-bottom: 30px;
+}
+
+
+@media (max-width:480px) {
+    body{
+        font-size: .8rem;
+    }
+    .lead{
+        font-size: .8rem;
+    }
+    #fixed-img {
+        position: fixed;
+        height: 100vh;
+        z-index: -10;
+        top: 273px;
+    }
+    #main {
+        margin-bottom: 55vh;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 20vw;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:1200px) {
+    #carouselClientImages .carousel-item img {
+        width: 100%;
+        height: 40vw;
+        object-fit: contain;
+    }
+}
+@keyframes fadeAndSlide {
+    from { transform: translateY(70px); }
+    to { transform: translateY(0px); }
+}
+.scroll-animate {
+    animation: fadeAndSlide 1s linear;
+    animation-timeline: scroll(root);
 }
