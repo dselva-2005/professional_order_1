@@ -3,60 +3,62 @@
 {% block content %}
 
 {% include "navbar.html" with active='contact_us' %}
-<header class="text-center mb-5 container-fluid p-5">
-    <img src="{% static 'images/blue_and_white/7.png' %}" alt="Business Strategy" class="img-fluid mb-4" >
-</header>
-<div class="container py-5">
-    <header class="text-center mb-5">
-        <h1 class="display-4">Contact Us</h1>
-        <p class="lead text-muted">Feeling Stuck? Let’s Turn Confusion into Clarity.</p>
+<section id="main">
+    <header class="text-center mb-5 container-fluid p-5">
+        <img src="{% static 'images/blue_and_white/7.png' %}" alt="Business Strategy" class="img-fluid mb-4" >
     </header>
-
-    <!-- Intro Section -->
-    <section class="mb-5 text-center">
-        <p>Need direction to become a coach? Want to start earning from home, gain financial freedom, or grow your business? You don’t have to figure it all out alone.</p>
-        <p>We help aspiring entrepreneurs, trainers, and freelancers with real strategies, real numbers, and real results — no hype, no fluff.</p>
-        <p>If you’re ready to move forward but don’t know where to start — we’re here to help.</p>
-        <p>Start your journey with guidance, support, and practical tools that actually work.</p>
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4">Contact Us</h1>
+            <p class="lead text-muted">Feeling Stuck? Let’s Turn Confusion into Clarity.</p>
+        </header>
+    
+        <!-- Intro Section -->
+        <section class="mb-5 text-center">
+            <p>Need direction to become a coach? Want to start earning from home, gain financial freedom, or grow your business? You don’t have to figure it all out alone.</p>
+            <p>We help aspiring entrepreneurs, trainers, and freelancers with real strategies, real numbers, and real results — no hype, no fluff.</p>
+            <p>If you’re ready to move forward but don’t know where to start — we’re here to help.</p>
+            <p>Start your journey with guidance, support, and practical tools that actually work.</p>
+        </section>
+    
+        <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="h3 text-center mb-3">Let’s Get Started</h2>
+            <p class="text-center mb-4">Fill out the form below and we’ll be in touch to help you gain clarity and confidence in your next steps.</p>
+    
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-light rounded-3 border-0 py-3" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control bg-light rounded-3 border-0 py-3" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control bg-light rounded-3 border-0 py-3" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control bg-light rounded-3 border-0 py-3" name="message" rows="4" placeholder="Message / What do you need help with?" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-maroon px-4 py-2 rounded-pill">Submit</button>
+                </div>
+            </form>
+    
+            <p class="text-center mt-4 text-muted">We respond to all inquiries within 24-48 hours.</p>
+        </div>
     </section>
-
-    <!-- Contact Form Section -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="h3 text-center mb-3">Let’s Get Started</h2>
-        <p class="text-center mb-4">Fill out the form below and we’ll be in touch to help you gain clarity and confidence in your next steps.</p>
-
-        <form action="#" method="POST">
-            <div class="mb-3">
-                <input type="text" class="form-control bg-light rounded-3 border-0 py-3" name="name" placeholder="Full Name" required>
-            </div>
-            <div class="mb-3">
-                <input type="email" class="form-control bg-light rounded-3 border-0 py-3" name="email" placeholder="Email Address" required>
-            </div>
-            <div class="mb-3">
-                <input type="tel" class="form-control bg-light rounded-3 border-0 py-3" name="phone" placeholder="Phone Number" required>
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control bg-light rounded-3 border-0 py-3" name="message" rows="4" placeholder="Message / What do you need help with?" required></textarea>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-maroon px-4 py-2 rounded-pill">Submit</button>
-            </div>
-        </form>
-
-        <p class="text-center mt-4 text-muted">We respond to all inquiries within 24-48 hours.</p>
+    
+        <!-- Book Free 15-Minute Call Section -->
+        <section class="text-center mt-5">
+            <h3>Or</h3>
+            <p>Book a 15-minute free clarity call to discuss your needs.</p>
+            <a href="https://calendly.com/your-link" class="btn btn-outline-maroon btn-lg">
+                Book Free 15-Minute Clarity Call
+            </a>
+        </section>
+    
     </div>
+    
 </section>
-
-    <!-- Book Free 15-Minute Call Section -->
-    <section class="text-center mt-5">
-        <h3>Or</h3>
-        <p>Book a 15-minute free clarity call to discuss your needs.</p>
-        <a href="https://calendly.com/your-link" class="btn btn-outline-maroon btn-lg">
-            Book Free 15-Minute Clarity Call
-        </a>
-    </section>
-
-</div>
-
 {% endblock content %}

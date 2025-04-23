@@ -1,5 +1,5 @@
 .navbar-brand{
-    width: 10%;
+    width: 12%;
 }
 
 .navbar{
@@ -9,6 +9,6 @@
 
 @media (max-width:480px){
     .navbar-brand{
-        width: 30%;
+        width: 35%;
     }
 }
