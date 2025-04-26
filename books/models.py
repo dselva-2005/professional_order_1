@@ -9,3 +9,6 @@ class Book(models.Model):
 
     def get_n_pages(n):
         pass
+
+    def __str__(self):
+        return f'{self.title}'

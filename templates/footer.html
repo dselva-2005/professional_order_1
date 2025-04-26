@@ -19,12 +19,12 @@
             <div class="col-12 col-md-3 mb-4 mb-md-0">
                 <h5 class="fw-bold mb-3 text-maroon">Services Links</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="footer-link">Skill to trainer Start Pack</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">Ultimate Trainer Launch Package</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">Advanced Lead Generation & Management Package</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">1-1 Fast Track Trainer Course</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">Direct 1-1 Business power hour exclusively for Bangalore</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">Newbie or Pro? We've Got You</a></li>
+                    <li class="mb-2"><a href="{% url "app:skill_to_trainer" %}" class="footer-link">Skill to trainer Start Pack</a></li>
+                    <li class="mb-2"><a href="{% url "app:ultimage_trainer_launch_pack" %}" class="footer-link">Ultimate Trainer Launch Package</a></li>
+                    <li class="mb-2"><a href="{% url "app:advanced_lead_generation_package" %}" class="footer-link">Advanced Lead Generation & Management Package</a></li>
+                    <li class="mb-2"><a href="{% url "app:fast_track_training" %}" class="footer-link">1-1 Fast Track Trainer Course</a></li>
+                    <li class="mb-2"><a href="{% url "app:live_session" %}" class="footer-link">Direct 1-1 Business power hour exclusively for Bangalore</a></li>
+                    <li class="mb-2"><a href="{% url "app:beginner_to_pro" %}" class="footer-link">Newbie or Pro? We've Got You</a></li>
                 </ul>
             </div>
 
@@ -32,10 +32,10 @@
             <div class="col-12 col-md-3 mb-4 mb-md-0">
                 <h5 class="fw-bold mb-3 text-maroon">Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="footer-link">About Us</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">Ebooks</a></li>
+                    <li class="mb-2"><a href="{% url "app:about_us" %}" class="footer-link">About Us</a></li>
+                    <li class="mb-2"><a href="{% url "books:book-list" %}" class="footer-link">Ebooks</a></li>
                     <li class="mb-2"><a href="#" class="footer-link">Blogs</a></li>
-                    <li class="mb-2"><a href="#" class="footer-link">Workshops</a></li>
+                    <li class="mb-2"><a href="{% url "app:workshops" %}" class="footer-link">Workshops</a></li>
                     <li class="mb-2"><a href="#" class="footer-link">Privacy Policy</a></li>
                 </ul>
             </div>
