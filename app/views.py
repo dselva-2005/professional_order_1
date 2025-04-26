@@ -5,31 +5,41 @@ from django.views.generic import TemplateView
 # Create your views here.
 class Home(TemplateView):
     def get(self,request):
-        return render(request,'home.html')
+        title = "Home"
+        return render(request,'home.html',{"title":title})
 
 def about_us(request):
-    return render(request,'about_us.html')
+    title = "About Us"
+    return render(request,'about_us.html',{"title":title})
 
 def contact_us(request):
-    return render(request,'contact_us.html')
+    title = "Contact Us"
+    return render(request,'contact_us.html',{"title":title})
 
 def beginner_to_pro(request):
-    return render(request,'beginner_to_pro.html')
+    title = "Beginner to Pro pack"
+    return render(request,'beginner_to_pro.html',{"title":title})
 
 def fast_track_training(request):
-    return render(request,'fast_track_training.html')
+    title = "Fast Track Training Pack"
+    return render(request,'fast_track_training.html',{"title":title})
 
 def workshops(request):
-    return render(request,'workshops.html')
+    title = "Workshops"
+    return render(request,'workshops.html',{"title":title})
 
 def live_session(request):
-    return render(request,'live_session.html')
+    title = "Live Session"
+    return render(request,'live_session.html',{"title":title})
 
 def skill_to_trainer(request):
-    return render(request,'skill_to_trainer.html')
+    title = "Skill To Trainer Pack"
+    return render(request,'skill_to_trainer.html',{"title":title})
 
 def ultimage_trainer_launch_pack(request):
-    return render(request,'ultimage_trainer_launch_pack.html')
+    title = "Ultimate Trainer Launch Pack"
+    return render(request,'ultimage_trainer_launch_pack.html',{"title":title})
 
 def advanced_lead_generation_package(request):
-    return render(request,'advanced_lead_generation_package.html')
+    title = "Advanced Lead Generation Pack"
+    return render(request,'advanced_lead_generation_package.html',{"title":title})

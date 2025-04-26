@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block title %}{{ title }}{% endblock title %}
 {% block content %}
 
     {% include "navbar.html" with active='about_us' %}

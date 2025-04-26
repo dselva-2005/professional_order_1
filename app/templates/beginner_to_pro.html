@@ -2,11 +2,13 @@
 {% load static %}
 {% block content %}
 {% include "navbar.html" %}
+{% block title %}{{ title }}{% endblock title %}
 <link rel="stylesheet" href="{% static "css/beginner_to_pro.css" %}">
 <section id="main">
     <header class="text-center mb-5 container-fluid p-3">
         <img src="{% static 'images/service_creatives_rectangle/8.png' %}" alt="Business Strategy" class="img-fluid mb-4">
-      </header>
+    </header>
+
     <div class="container-fluid px-5">
         <!-- For Beginners and Experienced Professionals Section -->
         <section>
@@ -15,55 +17,56 @@
                 <div class="col-md-5">
                     <div class="card">
                         <div class="card-header bg-maroon text-white">
-                            <h4>For Beginners: “I’m unsure where to start.”</h4>
+                            <h4>🔰 For Beginners – “I’m clueless, where do I start?”</h4>
                         </div>
                         <div class="card-body">
                             <ul>
-                                <li>✔ Gain a deep understanding of your niche and its significance.</li>
-                                <li>✔ Step-by-step guidance to help you identify and define your ideal niche.</li>
-                                <li>✔ Access to proven tools and templates for seamless decision-making.</li>
-                                <li>✔ Build your confidence and clarity to start your entrepreneurial journey without feeling overwhelmed.</li>
-                                <li>✔ Walk away with a clear, actionable roadmap to convert your expertise into a successful business.</li>
+                                <li>✅ Help you understand what a niche truly is and why it matters.</li>
+                                <li>✅ Guide you step-by-step to discover your perfect niche.</li>
+                                <li>✅ Provide tools and templates to make decision-making easy.</li>
+                                <li>✅ Build your confidence to start your journey without overwhelm.</li>
+                                <li>✅ Give you a clear, actionable roadmap to turn your knowledge into income.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- For Experienced Professionals -->
                 <div class="col-md-5">
                     <div class="card">
                         <div class="card-header bg-maroon text-white">
-                            <h4>For Experienced Professionals: “I know my niche, but I need a strategic plan.”</h4>
+                            <h4>🚀 For Experienced Professionals – “I know my niche, but I need a plan.”</h4>
                         </div>
                         <div class="card-body">
                             <ul>
-                                <li>✔ Refine and optimize your niche for greater market impact.</li>
-                                <li>✔ Develop a tailored growth strategy that aligns with your business objectives.</li>
-                                <li>✔ Explore advanced monetization techniques, including product offerings and coaching services.</li>
-                                <li>✔ Position your brand for scalability and long-term success through expert insights.</li>
-                                <li>✔ Receive actionable feedback and strategic direction based on your unique business journey.</li>
+                                <li>✅ Help refine and reposition your niche for maximum impact.</li>
+                                <li>✅ Customize a growth strategy that aligns with your goals.</li>
+                                <li>✅ Explore advanced monetization methods (products, coaching etc.).</li>
+                                <li>✅ Optimize your content and brand positioning for scalability.</li>
+                                <li>✅ Provide expert insights and feedback tailored to your unique journey.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <!-- Call to Action -->
         <section class="container">
-            <h2 class="csection-title">Take the Next Step in Your Business Journey</h2>
-            <p><strong>Book your FREE 15-minute clarity call to discuss your specific needs.</strong></p>
-            <a href="https://calendly.com/your-link" class="btn btn-maroon btn-lg">Schedule Your Free Call</a>
+            <h2 class="csection-title">Take Your Next Big Step With Us</h2>
+            <p><strong>Book a FREE 15-minute clarity call to discuss your needs.</strong></p>
+            <a href="https://calendly.com/your-link" class="btn btn-maroon btn-lg">Book Free 15-Minute Clarity Call</a>
         </section>
-    
+
         <!-- Customization Section -->
         <section class="container my-5">
-            <p><strong>💡 Need a more tailored approach? Let’s customize your strategy.</strong></p>
-            <p><strong>Our goal is to guide you through every stage of your business growth, ensuring you have the tools and clarity needed to succeed.</strong></p>
-            <p><strong>Whether you're just starting out or looking to scale, we’re here to provide the support and expertise you need to take your business to the next level.</strong></p>
+            <p><strong>💡 Need something different? It’s time to move forward—and we’re here to walk with you every step of the way.</strong></p>
+            <p><strong>👥 No matter where you are on your journey, we’ll meet you there—and help you move forward with confidence and purpose.</strong></p>
+            <p><strong>Let’s customize your plan!</strong></p>
             <a href="https://calendly.com/your-link" class="btn btn-outline-maroon btn-lg">Book Your Free Clarity Call</a>
         </section>
-    
+
     </div>
 </section>
+
 {% endblock content %}

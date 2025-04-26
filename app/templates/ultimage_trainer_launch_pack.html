@@ -4,379 +4,444 @@
 {% block content %}
 {% include "navbar.html" %}
 <link rel="stylesheet" href="{% static "css/ultimate_trainer_launch_pack.css" %}">
+{% block title %}{{ title }}{% endblock title %}
 
-<header class="text-center container-fluid p-3">
-  <img src="{% static 'images/service_creatives_rectangle/6.png' %}" alt="Business Strategy" class="img-fluid">
-</header>
-<div class="container">
-<!-- HERO SECTION -->
-<section class="hero">
-  <h1 class="display-5 fw-bold">🎯 Ultimate Trainer Launch Package</h1>
-  <p class="lead mt-3">From niche finalization to scalable monetization, this program is your complete launch system 🚀</p>
-</section>
-
-<!-- WHY THIS IS A GAME-CHANGER -->
-<section class="section">
+<section id="main">
+  <header class="text-center container-fluid">
+    <img src="{% static 'images/service_creatives_rectangle/6.png' %}" alt="Business Strategy" class="img-fluid">
+  </header>
   <div class="container">
-    <h2 class="section-title">🔥 Why This Package is a Game-Changer?</h2>
-    <ul>
-      <li>✅ End-to-End Support – From niche selection to monetization.</li>
-      <li>✅ Live Mentorship – Learn from international mentors.</li>
-      <li>✅ Done-For-You Services – Website, branding, SEO, and more.</li>
-      <li>✅ Scalable Monetization – Digital products, courses, affiliates, and ads.</li>
-      <li>✅ Festive & Seasonal Sales Boosts – Strategies to spike revenue.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- PACKAGE INCLUSIONS -->
-<section class="section bg-light py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">🏆 Package Inclusions (3 Weeks)</h2>
-
-    <!-- Phase 1 -->
-    <h4 class="mb-3">📌 Phase 1: Strategic Foundation</h4>
-    <ul>
-      <li><strong>✅ 1. Detailed Strategy Call – Niche Finalization</strong><br>
-        Deep dive strategy session to finalize your niche based on market demand and your expertise.<br>
-        Competitor analysis and unique positioning strategy to stand out.
-      </li>
-      <li class="mt-3"><strong>✅ 2. Initial Question Session with International Mentor</strong><br>
-        One-on-one session with an experienced international mentor to identify your strengths, explore market gaps, and define training goals.<br>
-        Personalized feedback on your niche potential and growth opportunities.
-      </li>
-    </ul>
-
-    <!-- Phase 2 -->
-    <h4 class="mt-5 mb-3">📌 Phase 2: Training Structure & Content Creation</h4>
-    <ul>
-      <li><strong>✅ 3. Mindset Shift</strong><br>
-        Why mindset matters in business success.<br>
-        Overcoming fear and self-doubt in client acquisition.
-      </li>
-      <li class="mt-3"><strong>✅ 4. How to Become a Trainer in Your Niche</strong><br>
-        Step-by-step guide on building authority and establishing credibility.<br>
-        Proven frameworks to structure training content for impact.
-      </li>
-      <li class="mt-3"><strong>✅ 5. Content Localization</strong><br>
-        Customizing your content for local and global audiences.<br>
-        Strategies to adjust language, tone, and visuals to improve engagement.
-      </li>
-      <li class="mt-3"><strong>✅ 6. Customer Avatar – 5 Ws Analysis</strong><br>
-        In-depth analysis using the 5 Ws framework (Who, What, When, Where, Why).<br>
-        Creating audience segments for tailored messaging.
-      </li>
-      <li class="mt-3"><strong>✅ 7. Training Strategies for Online, Offline & Combined Models</strong><br>
-        Detailed strategies for successful sessions across all platforms.<br>
-        How to adapt methods for participation and retention.
-      </li>
-    </ul>
-
-    <!-- Phase 3 -->
-    <h4 class="mt-5 mb-3">📌 Phase 3: Branding & Website Setup</h4>
-    <ul>
-      <li><strong>✅ 8. Building a Professional Website *</strong><br>
-        Create a high-converting, mobile-friendly, SEO-optimized website.<br>
-        Example provided for easy replication.
-      </li>
-      <li class="mt-3"><strong>✅ 9. Logo Creation *</strong><br>
-        Logo design to establish brand identity with multiple platform variations.
-      </li>
-      <li class="mt-3"><strong>✅ 10. Purchase of Domain *</strong><br>
-        Assistance in choosing and purchasing a premium domain.
-      </li>
-    </ul>
-    <p class="text-muted mt-2">*Conditions apply</p>
-
-    <!-- Phase 4 -->
-    <h4 class="mt-5 mb-3">📌 Phase 4: Social Media Presence</h4>
-    <ul>
-      <li><strong>✅ 11. Social Media Page Creation & Bio Audit</strong><br>
-        Setup and optimize Instagram, Facebook, and LinkedIn.<br>
-        Professional bio writing reflecting niche and branding.
-      </li>
-      <li class="mt-3"><strong>✅ 12. Hashtag Strategy</strong><br>
-        Curated list of niche-specific hashtags.<br>
-        Rotation strategies to boost engagement.
-      </li>
-      <li class="mt-3"><strong>✅ 13. Basic SEO & Keyword Research</strong><br>
-        In-depth keyword research for your website and pages.<br>
-        Setup SEO to boost visibility.
-      </li>
-      <li class="mt-3"><strong>✅ 14. Training on How to Effectively Record a Video</strong><br>
-        <ul>
-          <li>Essential Equipment: Camera, microphone, lighting, tripod, background.</li>
-          <li>Recording Techniques: Framing, lighting, audio clarity, presence.</li>
-          <li>Apps & Tools: Editing apps, teleprompters, video software.</li>
-          <li>Grooming Tips</li>
-        </ul>
-      </li>
-    </ul>
-
-    <!-- Phase 5 -->
-    <h4 class="mt-5 mb-3">📌 Phase 5: Advanced Sales Strategies & Offline Market</h4>
-    <ul>
-      <li><strong>✅ 15. The Art of Selling Without Selling</strong><br>
-        Attract clients without being “salesy.”<br>
-        Free value strategy, crafting a pitch, digital product discussions.
-      </li>
-      <li class="mt-3"><strong>✅ 16. Sales Boosting During Festivities</strong><br>
-        Custom brand awareness campaigns for peak seasons.<br>
-        Festive content calendar + promotional planning.
-      </li>
-    </ul>
-
-    <!-- Phase 6 -->
-    <h4 class="mt-5 mb-3">📌 Phase 6: Final Wrap-Up Session</h4>
-    <ul>
-      <li><strong>✅ 17. Action Plan & Execution with International Mentor & Founder</strong><br>
-        SMART goals for client acquisition, weekly systems, progress tracking, Q&A.
-      </li>
-      <li class="mt-3"><strong>✅ 18. Issue of Certificate</strong><br>
-        Certificate for mastering the art of coaching.
-      </li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- BONUSES -->
-<section class="section bg-white py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">🌟 Premium Bonuses – ₹2,00,000+ <small class="text-success">(FREE!)</small></h2>
-    <ul class="list-unstyled">
-      <li class="mb-4">
-        <strong>🎁 1. Mentor for Website SEO and Instagram Bios</strong><br>
-        Direct guidance on improving your search engine ranking and social media discoverability.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 2. Content Creation for Social Media (3 Custom Posts)</strong><br>
-        Professionally designed posts tailored to your niche.<br>
-        Includes high-converting captions and CTA suggestions.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 3. Mentor on Meta Ad Creation</strong><br>
-        End-to-end training on setting up and scaling Meta (Facebook + Instagram) ads for lead generation.<br>
-        Includes a hands-on session to refine audience targeting and performance.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 4. Lead Generation & Sales Strategy Mentor</strong><br>
-        Personalized guidance on attracting quality leads and converting them consistently.<br>
-        Includes advanced retargeting strategies to reduce acquisition costs.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 5. Mentor on Digital Product Creation</strong><br>
-        Step-by-step blueprint to create and sell digital products like courses, eBooks, and templates.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 6. Mentor on Blog Writing</strong><br>
-        Learn to craft SEO-optimized blog posts that drive traffic, boost credibility, and attract clients organically.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 7. Organic & Paid Lead Generation Techniques</strong><br>
-        Practical strategies to balance organic growth with paid ad reach.<br>
-        Scaling techniques for a consistent and predictable lead flow.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 8. Live Demonstration of Launching Ads & Training</strong><br>
-        Real-time walkthrough of launching successful ad campaigns.<br>
-        Learn targeting, budgeting, and ad creative testing live.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 9. Hooks, CTAs & Hashtags – Personalized to Your Brand</strong><br>
-        Proven headlines, calls-to-action, and hashtag strategies aligned with your brand voice.
-      </li>
-      <li class="mb-4">
-        <strong>🎁 10. Live Demonstration – Creating a Webinar Presentation in Canva</strong><br>
-        Design eye-catching webinar slides with Canva.<br>
-        Structuring content for engagement, clarity, and conversion.
-      </li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- CTA Section -->
-<section class="bg-dark text-white py-5">
-  <div class="container text-center">
-    <h2 class="section-title mb-3">💼 Exclusive Package Access</h2>
-    <p class="lead">👉 To get our surprise exclusive package price:</p>
-    <p>Book a call and talk to us to receive the offer and payment link.</p>
-
-    <div class="my-4">
-      <a href="https://calendly.com/YOUR_CALENDLY_LINK" class="btn btn-warning btn-lg me-3">
-        📅 Book 15-Min Free Clarity Call
-      </a>
-      <p class="mt-3 mb-0">📲 Or drop a message at <strong>7899790978</strong> for a callback.</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1 class="display-5 fw-bold">🎯 Ultimate Trainer Launch Package</h1>
+    <p class="lead mt-3">🔥 Goal: To help aspiring trainers establish their niche, build a strong online presence, and generate consistent leads and sales through expert guidance and live demonstrations.</p>
+  </section>
+  
+  <!-- WHY THIS IS A GAME-CHANGER -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">🔥 Why This Package is a Game-Changer?</h2>
+      <ul>
+        <li>✅ End-to-End Support – From niche selection to monetization.</li>
+        <li>✅ Live Mentorship – Learn from international mentors.</li>
+        <li>✅ Done-For-You Services – Website, branding, SEO, and more.</li>
+        <li>✅ Scalable Monetization – Multiple income streams (training, digital products, ads, affiliates).</li>
+        <li>✅ Festive & Seasonal Sales Boosts – Special strategies to maximize earnings.</li>
+        <li>✅Combined Strategies to maximize earnings.</li>
+      </ul>
     </div>
-
-    <p class="mt-4 text-success">
-      🎁 Surprise Offer Includes Bonuses Worth ₹2,00,000+ <br>
-      💰 Actual Value: ₹3,50,000+ <br>
-      👉 🔗 Book Now & Start Earning!
-    </p>
-  </div>
-</section>
-
-
-<!-- WHO IS THIS FOR -->
-<section class="bg-light py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">💡 Who Is This For?</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <ul class="list-unstyled">
-          <li>✔ New Trainers – Want to build authority & attract clients</li>
-          <li>✔ Coaches & Consultants – Struggling with lead generation</li>
-          <li>✔ Experts – Looking to monetize knowledge via courses & training</li>
-          <li>✔ Entrepreneurs – Wanting a structured online training business</li>
-        </ul>
-
-        <hr class="my-4">
-
-        <h4 class="fw-bold">💰 ROI Potential</h4>
-        <ul class="list-unstyled">
-          <li>₹20K–₹1 Lakh per training session</li>
-          <li>₹10K–₹50K per digital product</li>
-          <li>₹10K–₹40K/month from ads & affiliate income</li>
-        </ul>
-
-        <p class="mt-4 text-danger">
-          🎯 <strong>Limited-Time Offer:</strong> <em>????????</em> (Incl. GST) <br>
-          <span class="text-secondary">vs. ₹3,50,000+ actual value</span>
-        </p>
-
-        <p class="text-success">
-          🚀 Bonus Worth ₹2,00,000+ in FREE Premium Add-Ons <br>
-          (SEO, Meta Ad Setup, Content Creation, Lead Gen Mentorship)
-        </p>
-
-        <div class="text-center mt-4">
-          <a href="https://calendly.com/YOUR_CALENDLY_LINK" class="btn btn-maroon btn-lg">
-            📅 Book Your FREE 15-Minute Clarity Call
-          </a>
+  </section>
+  
+  <!-- PACKAGE INCLUSIONS -->
+  <section class="section bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">🏆 Package Inclusions (3 Weeks)</h2>
+  
+      <!-- Phase 1 -->
+      <h4 class="mb-3">📌 Phase 1: Strategic Foundation</h4>
+      <ul>
+        <li><strong>✅ 1. Detailed Strategy Call – Niche Finalization</strong><br>
+          Deep dive strategy session to finalize your niche based on market demand and your expertise.<br>
+          Competitor analysis and unique positioning strategy to stand out.
+        </li>
+        <li class="mt-3"><strong>✅ 2. Initial Question Session with International Mentor</strong><br>
+          One-on-one session with an experienced international mentor to identify your strengths, explore market gaps, and define training goals.<br>
+          Personalized feedback on your niche potential and growth opportunities.
+        </li>
+      </ul>
+  
+      <!-- Phase 2 -->
+      <h4 class="mt-5 mb-3">📌 Phase 2: Training Structure & Content Creation</h4>
+      <ul>
+        <li><strong>✅ 3. Mindset Shift</strong><br>
+          Why mindset matters in business success.<br>
+          Overcoming fear and self-doubt in client acquisition.
+        </li>
+        <li class="mt-3"><strong>✅ 4. How to Become a Trainer in Your Niche</strong><br>
+          Step-by-step guide on building authority and establishing credibility in your niche.<br>
+          Proven frameworks to structure training content for maximum impact.
+        </li>
+        <li class="mt-3"><strong>✅ 5. Content Localization</strong><br>
+          Customizing your content for local and global audiences.<br>
+          Strategies to adjust language, tone, and visuals to improve engagement.
+        </li>
+        <li class="mt-3"><strong>✅ 6. Customer Avatar – 5 Ws Analysis</strong><br>
+          In-depth analysis of your ideal customer using the 5 Ws framework (Who, What, When, Where, Why).<br>
+          Creating audience segments to craft tailored messaging and offers.
+        </li>
+        <li class="mt-3"><strong>✅ 7. Training Strategies for Online, Offline & Combined Models</strong><br>
+          Detailed strategies to conduct successful training sessions across different platforms.<br>
+          How to adapt your training methods for maximum participation and retention.
+        </li>
+      </ul>
+  
+      <!-- Phase 3 -->
+      <h4 class="mt-5 mb-3">📌 Phase 3: Branding & Website Setup</h4>
+      <ul>
+        <li><strong>✅ 8. Building a Professional Website *</strong><br>
+          Create a high-converting website <br> mobile-friendly design, SEO optimization<br>
+          Example website provided to replicate success.
+        </li>
+        <li class="mt-3"><strong>✅ 9. Logo Creation *</strong><br>
+          Logo design to establish brand identity. <br> Multiple variations for different platforms (social media, website, presentations).
+        </li>
+        <li class="mt-3"><strong>✅ 10. Purchase of Domain *</strong><br>
+          Assistance in choosing and purchasing a premium domain that reflects your brand.
+        </li>
+      </ul>
+      <p class="text-muted mt-2">*Conditions apply</p>
+  
+      <!-- Phase 4 -->
+      <h4 class="mt-5 mb-3">📌 Phase 4: Social Media Presence</h4>
+      <ul>
+        <li><strong>✅ 11. Social Media Page Creation & Bio Audit</strong><br>
+          Setup and optimization of Instagram, Facebook, and LinkedIn pages.<br>
+          Professional bio writing to reflect your niche and brand positioning.
+        </li>
+        <li class="mt-3"><strong>✅ 12. Hashtag Strategy</strong><br>
+          Curated list of niche-specific hashtags to maximize discoverability.<br>
+          Strategies for rotating hashtags and boosting engagement.
+        </li>
+        <li class="mt-3"><strong>✅ 13. Basic SEO & Keyword Research</strong><br>
+          In-depth keyword research for your website and social media pages.<br>
+          SEO setup to improve visibility and organic reach.
+        </li>
+        <li class="mt-3"><strong>✅ 14. Training on How to Effectively Record a Video</strong><br>
+            Essential Equipment: Camera, microphone, lighting, tripod, and background setup.
+            <br>Recording Techniques: Framing, lighting, audio clarity, and presentation skills.
+            <br>Apps & Tools: Video recording apps, editing software, and teleprompter tools.
+            <br>Grooming Tips
+        </li>
+      </ul>
+  
+      <!-- Phase 5 -->
+      <h4 class="mt-5 mb-3">📌 Phase 5: Advanced Sales Strategies & Offline Market</h4>
+      <ul>
+        <li><strong>✅ 15. The Art of Selling Without Selling</strong><br>
+          How to attract clients without being "salesy."<br>
+          Offering value upfront (free resources, consultations),Discussion on Digital products <br>Crafting a compelling pitch & closing deals.
+        </li>
+        <li class="mt-3"><strong>✅ 16. Sales Boosting During Festivities</strong><br>
+          Awareness campaigns for the brand for a month.<br>
+          Custom strategies to maximize sales and engagement during peak seasons. <br>Promotional calendar and content plan for festive campaigns.
+        </li>
+      </ul>
+  
+      <!-- Phase 6 -->
+      <h4 class="mt-5 mb-3">📌 Phase 6: Final Wrap-Up Session</h4>
+      <ul>
+        <li><strong>✅ 17. Action Plan & Execution with International Mentor & Founder</strong><br>
+          Setting SMART goals for client acquisition. <br> 
+          Daily and weekly strategies for consistency,Tracking progress & making improvements <br> 
+          Open floor for questions & personalized advice, Encouragement & next steps to take immediate action.
+        </li>
+        <li class="mt-3"><strong>✅ 18. Issue of Certificate for Mastering the Art of Coaching</strong><br>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  <!-- BONUSES -->
+  <section class="section bg-white py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">🌟 Premium Bonuses – ₹2,00,000+ <small class="text-success">(FREE!)</small></h2>
+      <ul class="list-unstyled">
+        <li class="mb-4">
+          <strong>🎁 1. Mentor for Website SEO and Instagram Bios</strong><br>
+          Direct guidance on improving your search engine ranking and social discoverability.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 2. Content Creation for Social Media (3 Custom Posts)</strong><br>
+          Professionally designed posts tailored to your niche.<br>
+          High-converting captions and CTA suggestions included.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 3. Mentor on Meta Ad Creation</strong><br>
+          Complete training on setting up and scaling Meta ads for lead generation.<br>
+          Hands-on session to refine targeting and ad performance.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 4. Lead Generation & Sales Strategy Mentor</strong><br>
+          Personalized guidance on attracting and converting leads consistently.<br>
+          Retargeting strategies to reduce customer acquisition costs.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 5. Mentor on Digital Product Creation</strong><br>
+          Step-by-step training on creating and selling digital products (courses, eBooks, templates).
+        </li>
+        <li class="mb-4">
+          <strong>🎁 6. Mentor on Blog Writing</strong><br>
+          Crafting SEO-optimized blog posts to drive organic traffic and build authority.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 7. Organic & Paid Lead Generation Techniques</strong><br>
+          Strategies for balancing organic reach and paid advertising.<br>
+          Scaling techniques for consistent lead flow.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 8. Live Demonstration of Launching Ads & Training</strong><br>
+          Real-time walkthrough on launching high-converting ads.<br>
+          Strategies for audience targeting, budgeting, and creative testing.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 9. Hooks, CTAs & Hashtags – Personalized to Your Brand</strong><br>
+          Winning headlines, call-to-actions, and hashtag strategy for engagement.
+        </li>
+        <li class="mb-4">
+          <strong>🎁 10. Live Demonstration – Creating a Webinar Presentation in Canva</strong><br>
+          Designing professional webinar slides using Canva.<br>
+          Tips on structuring content for maximum retention and sales.
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  <!-- CTA Section -->
+  <section class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h2 class="section-title mb-3">💼 Exclusive Package Access</h2>
+      <p class="lead">👉 To get our surprise exclusive package price:</p>
+      <p>Book a call and talk to us to receive the offer and payment link.</p>
+  
+      <div class="my-4">
+        <a href="https://calendly.com/YOUR_CALENDLY_LINK" class="btn btn-warning btn-lg me-3">
+          📅 Book 15-Min Free Clarity Call
+        </a>
+        <p class="mt-3 mb-0">📲 Or drop a message at <strong>7899790978</strong> for a callback.</p>
+      </div>
+  
+      <p class="mt-4 text-success">
+        🎁 Surprise Offer Includes Bonuses Worth ₹2,00,000+ <br>
+        💰 Actual Value: ₹3,50,000+ <br>
+        👉 🔗 Book Now & Start Earning!
+      </p>
+    </div>
+  </section>
+  
+  
+  <!-- WHO IS THIS FOR -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">💡 Who Is This For?</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-unstyled">
+            <li>✔ New Trainers – Want to build authority & attract clients</li>
+            <li>✔ Coaches & Consultants – Struggling with lead generation</li>
+            <li>✔ Experts – Looking to monetize knowledge via courses & training</li>
+            <li>✔ Entrepreneurs – Wanting a structured online training business</li>
+          </ul>
+  
+          <hr class="my-4">
+  
+          <h4 class="fw-bold">💰 ROI Potential</h4>
+          <ul class="list-unstyled">
+            <li>₹20K–₹1 Lakh per training session</li>
+            <li>₹10K–₹50K per digital product</li>
+            <li>₹10K–₹40K/month from ads & affiliate income</li>
+          </ul>
+  
+          <p class="mt-4 text-danger">
+            🎯 <strong>Limited-Time Offer:</strong> <em>????????</em> (Incl. GST) <br>
+            <span class="text-secondary">vs. ₹3,50,000+ actual value</span>
+          </p>
+  
+          <p class="text-success">
+            🚀 Bonus: ₹2,00,000+ in FREE premium add-ons (SEO, ad setup, content creation, lead gen).
+          </p>
+  
+          <div class="text-center mt-4">
+            <a href="https://calendly.com/YOUR_CALENDLY_LINK" class="btn btn-maroon btn-lg">
+              📅 Book Your FREE 15-Minute Clarity Call
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- READY TO LAUNCH -->
-<section class="section bg-light py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">🚀 Ready to Launch Your Trainer Business Like a Pro? Let’s Get Started!</h2>
-
-    <h3 class="mb-4">Who Will Benefit from the Ultimate Trainer Launch Package?</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <h5>1️⃣ Aspiring Trainers (Just Starting Out)</h5>
-        <p><strong>🚀</strong> You have knowledge & skills but don’t know how to monetize them.</p>
-        <ul class="">
+  </section>
+  <section class="mt-4">
+    <header>
+      <h3>🚀 Ready to Launch Your Trainer Business Like a Pro? Let’s Get Started!</h3>
+    </header>
+  
+    <section>
+      <h3>Who Will Benefit from the Ultimate Trainer Launch Package?</h3>
+  
+      <article>
+        <h4>1️⃣ Aspiring Trainers (Just Starting Out)</h3>
+        <p>🚀 You have knowledge & skills but don’t know how to monetize them.</p>
+        <ul>
           <li>✅ Struggle: Unsure of your niche, pricing, or how to position yourself.</li>
           <li>✅ Solution: Niche finalization, mindset training, and step-by-step guidance on launching your first paid training.</li>
         </ul>
-        <p><strong>💡 Ideal For:</strong></p>
-        <ul class="">
+        <p>💡 Ideal For:</p>
+        <ul>
           <li>✔ Corporate professionals transitioning into training.</li>
           <li>✔ Freelancers/consultants looking to scale via training.</li>
           <li>✔ Industry experts who want to teach but lack a business model.</li>
         </ul>
-      </div>
-      <div class="col-md-6">
-        <h5>2️⃣ Coaches & Consultants (Struggling with Lead Generation & Sales)</h5>
-        <p><strong>🚀</strong> You offer 1:1 services but want scalable income.</p>
-        <ul class="">
+      </article>
+  
+      <article>
+        <h4>2️⃣ Coaches & Consultants (Struggling with Lead Generation & Sales)</h3>
+        <p>🚀 You offer 1:1 services but want scalable income.</p>
+        <ul>
           <li>✅ Struggle: Inconsistent clients, low conversions, or difficulty selling.</li>
           <li>✅ Solution: Sales training, lead generation strategies, and digital product creation to attract & retain clients.</li>
         </ul>
-        <p><strong>💡 Ideal For:</strong></p>
-        <ul class="">
+        <p>💡 Ideal For:</p>
+        <ul>
           <li>✔ Life coaches, career coaches, business consultants.</li>
           <li>✔ Health & wellness coaches (fitness, nutrition, mental health).</li>
           <li>✔ Marketing/Sales trainers who want to systemize client acquisition.</li>
         </ul>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <h5>3️⃣ Existing Trainers (Wanting to Scale & Systemize)</h5>
-        <p><strong>🚀</strong> You conduct workshops but want passive income & global reach.</p>
-        <ul class="">
+      </article>
+  
+      <article>
+        <h4>3️⃣ Existing Trainers (Wanting to Scale & Systemize)</h3>
+        <p>🚀 You conduct workshops but want passive income & global reach.</p>
+        <ul>
           <li>✅ Struggle: Manual client onboarding, low ticket sizes, or dependency on offline sessions.</li>
           <li>✅ Solution: Online training models, digital product creation, and automated lead funnels.</li>
         </ul>
-        <p><strong>💡 Ideal For:</strong></p>
-        <ul class="">
+        <p>💡 Ideal For:</p>
+        <ul>
           <li>✔ Corporate trainers shifting to online courses.</li>
           <li>✔ Public speakers monetizing their expertise.</li>
           <li>✔ Workshop hosts wanting recorded courses & memberships.</li>
         </ul>
-      </div>
-      <div class="col-md-6">
-        <h5>4️⃣ Digital Entrepreneurs (Adding Training as a Revenue Stream)</h5>
-        <p><strong>🚀</strong> You run a business but want to add training as a high-ticket offer.</p>
-        <ul class="">
+      </article>
+  
+      <article>
+        <h4>4️⃣ Digital Entrepreneurs (Adding Training as a Revenue Stream)</h3>
+        <p>🚀 You run a business but want to add training as a high-ticket offer.</p>
+        <ul>
           <li>✅ Struggle: Not sure how to structure courses, price them, or market effectively.</li>
-          <li>✅ Solution: Done-for-you content localization, webinar setups.</li>
+          <li>✅ Solution: Done-for-you content localization, webinar setups</li>
         </ul>
-        <p><strong>💡 Ideal For:</strong></p>
-        <ul class="">
-          <li>✔ Online business owners.</li>
+        <p>💡 Ideal For:</p>
+        <ul>
+          <li>✔ Online business owners</li>
           <li>✔ Influencers/creators monetizing their audience.</li>
           <li>✔ Authors & speakers launching premium courses.</li>
         </ul>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <h5>5️⃣ Industry Experts (Looking to Build Authority & Passive Income)</h5>
-        <p><strong>🚀</strong> You’re a recognized expert but not monetizing your knowledge.</p>
-        <ul class="">
+      </article>
+  
+      <article>
+        <h4>5️⃣ Industry Experts (Looking to Build Authority & Passive Income)</h3>
+        <p>🚀 You’re a recognized expert but not monetizing your knowledge.</p>
+        <ul>
           <li>✅ Struggle: No time to create courses, or unsure how to package expertise.</li>
           <li>✅ Solution: Digital product mentorship, SEO-optimized content, and automated sales systems.</li>
         </ul>
-        <p><strong>💡 Ideal For:</strong></p>
-        <ul class="">
+        <p>💡 Ideal For:</p>
+        <ul>
           <li>✔ Doctors, lawyers, finance experts teaching certifications.</li>
           <li>✔ Tech professionals (coders, designers) launching boot camps.</li>
           <li>✔ Artists, writers, and creatives teaching masterclasses.</li>
         </ul>
-      </div>
-    </div>
-
-    <hr class="my-5">
-
-    <h4 class="text-center">🎯 Bottom Line:</h4>
-    <p class=" text-center">
-      If you have valuable knowledge and want to turn it into a profitable training business, this program eliminates guesswork and gives you a proven roadmap to:
-    </p>
-    <ul class=" text-center">
-      <li>✔ Find your niche & stand out.</li>
-      <li>✔ Build a brand & attract clients.</li>
-      <li>✔ Create scalable income (courses, coaching, ads).</li>
-      <li>✔ Master sales without being pushy.</li>
-    </ul>
-
-    <hr class="my-5">
-
-    <h3 class="text-center">🎯 Why This is Perfect for Women?</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <ul class="">
-          <li>✔ Flexible Learning – Work at your own pace, part-time or full-time.</li>
-          <li>✔ Work from Home – No need for physical sessions; scale globally.</li>
-          <li>✔ Financial Independence – Turn skills into ₹20K–₹1L per session.</li>
-          <li>✔ Supportive Community – Connect with like-minded women trainers.</li>
+      </article>
+    </section>
+  
+    <section>
+      <h2>🎯 Bottom Line:</h2>
+      <p>If you have valuable knowledge and want to turn it into a profitable training business, this program eliminates guesswork and gives you a proven roadmap to:</p>
+      <ul>
+        <li>✔ Find your niche & stand out.</li>
+        <li>✔ Build a brand & attract clients.</li>
+        <li>✔ Create scalable income (courses, coaching, ads).</li>
+        <li>✔ Master sales without being pushy.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <article>
+        <h4>1️⃣ Women Professionals & Career Transitioners</h3>
+        <p>🚀 You want to turn your skills into a business but don’t know where to start.</p>
+        <ul>
+          <li>✅ Struggle: Balancing work & family, unsure how to monetize expertise.</li>
+          <li>✅ Solution: Niche selection, flexible training models, and passive income strategies.</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</div>
-
-{% endblock content %} 
+        <p>💡 Ideal For:</p>
+        <ul>
+          <li>✔ Working moms looking for a side income.</li>
+          <li>✔ Corporate women transitioning into coaching/training.</li>
+          <li>✔ Women returning to work after a career break.</li>
+        </ul>
+      </article>
+  
+      <article>
+        <h4>2️⃣ Part-Time Trainers & Freelancers</h3>
+        <p>🚀 You want extra income without quitting your job.</p>
+        <ul>
+          <li>✅ Struggle: Limited time, inconsistent clients, or low-paying gigs.</li>
+          <li>✅ Solution: Automated lead generation, digital courses, and weekend/webinar-based training models.</li>
+        </ul>
+        <p>💡 Ideal For:</p>
+        <ul>
+          <li>✔ Teachers, HR professionals, or corporate trainers offering part-time workshops.</li>
+          <li>✔ Freelancers (writers, designers, marketers) who want to teach their craft.</li>
+          <li>✔ Stay-at-home moms monetizing their skills online.</li>
+        </ul>
+      </article>
+  
+      <article>
+        <h4>3️⃣ Women Coaches & Wellness Experts</h3>
+        <p>🚀 You help others but struggle with sales & scaling.</p>
+        <ul>
+          <li>✅ Struggle: Relying only on 1:1 sessions, difficulty attracting clients.</li>
+          <li>✅ Solution: Online course creation, social media branding, and automated sales funnels.</li>
+        </ul>
+        <p>💡 Ideal For:</p>
+        <ul>
+          <li>✔ Life coaches, relationship coaches, parenting coaches.</li>
+          <li>✔ Health & wellness experts (yoga, nutrition, mental health).</li>
+          <li>✔ Spiritual & mindfulness guides looking to expand reach.</li>
+        </ul>
+      </article>
+  
+      <article>
+        <h4>4️⃣ Female Entrepreneurs & Business Owners</h3>
+        <p>🚀 You run a business but want training as an additional revenue stream.</p>
+        <ul>
+          <li>✅ Struggle: Not sure how to structure courses or market them effectively.</li>
+          <li>✅ Solution: Done-for-you course setup, webinar training, and high-ticket sales strategies.</li>
+        </ul>
+        <p>💡 Ideal For:</p>
+        <ul>
+          <li>✔ Small business owners (fashion, beauty, fitness).</li>
+          <li>✔ Consultants & agency owners teaching industry skills.</li>
+          <li>✔ Influencers & content creators launching masterclasses.</li>
+        </ul>
+      </article>
+  
+      <article>
+        <h4>5️⃣ Women from All Fields (Art, Tech, Finance, Law, etc.)</h3>
+        <p>🚀 You’re an expert but not monetizing your knowledge.</p>
+        <ul>
+          <li>✅ Struggle: No time to create courses or lack technical/marketing skills.</li>
+          <li>✅ Solution: Digital product mentorship, SEO-optimized content, and sales automation.</li>
+        </ul>
+        <p>💡 Ideal For:</p>
+        <ul>
+          <li>✔ Doctors, lawyers, finance experts teaching certifications.</li>
+          <li>✔ Tech professionals (coders, designers) launching boot camps.</li>
+          <li>✔ Artists, writers & creatives teaching masterclasses.</li>
+        </ul>
+      </article>
+    </section>
+  
+    <section>
+      <h2>🌟 Why This is Perfect for Women?</h2>
+      <ul>
+        <li>✔ Flexible Learning – Work at your own pace, part-time or full-time.</li>
+        <li>✔ Work from Home – No need for physical sessions; scale globally.</li>
+        <li>✔ Financial Independence – Turn skills into ₹20K–₹1L per session.</li>
+        <li>✔ Supportive Community – Connect with like-minded women trainers.</li>
+      </ul>
+    </section>
+  </section>
+  
+{% endblock content %}

@@ -42,3 +42,12 @@ html {
 #main {
     margin-bottom: 80vh;
 }
+
+
+@media (max-width:480px) {
+    #main {
+        margin-bottom: 55vh;
+        padding-top: 8rem;
+
+    }
+}

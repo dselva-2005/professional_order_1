@@ -144,7 +144,6 @@ body {
         top: 273px;
     }
     #main {
-        margin-bottom: 55vh;
         padding-top: 8rem;
 
     }
@@ -178,3 +177,7 @@ body {
 #main{
     padding-top: 10rem;
 }
+
+.list-group-item{
+    border: none !important;
+  }

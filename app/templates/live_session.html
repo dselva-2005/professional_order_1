@@ -1,260 +1,240 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+{% block title %}{{ title }}{% endblock title %}
 
 {% include "navbar.html" %}
 <link rel="stylesheet" href="{% static "css/live_session.css" %}">
 <!-- Hero Section -->
-<section class="hero-section text-center container-fluid p-3">
-    <h1 class="display-4 mb-4">🚀 3-Hour Business Power Hour – Live Session in Bangalore!</h1>
-    <p class="lead text-muted">This exclusive session is designed to empower you with the strategies and insights you need to fast-track your business success.</p>
-    <p class="text-muted">Not limited to 3 hours — we also offer free Zoom follow-ups as needed to help with your action points.</p>
-</section>
-<div class="container">
-
-
-    <!-- Action Plan Section -->
-    <section>
-        <h2 class="csection-title text-maroon text-center">Your Complete Growth Plan 🚀</h2>
-        <p class="text-center">Join us for this in-person, high-impact strategy session to clarify your business goals, build a powerful brand, and create a clear roadmap for success.</p>
-        <p class="text-center font-weight-bold">📍 Location: Kundalahalli, Whitefield, Marathahalli, Bangalore (Exact venue shared upon booking)</p>
-        <p class="text-center font-weight-bold">Consultation Languages: English, Tamil, Hindi, Telugu</p>
-    </section>
-    <header class="text-center mb-5">
-        <img src="{% static 'images/service_creatives_rectangle/5.png' %}" alt="Business Strategy" class="img-fluid mb-4" style="max-height: 300px;">
-    </header>
-    <!-- What’s Inside Section -->
-    <section>
-        <h2 class="csection-title text-center">📌 What’s Inside? (Your Action Plan)</h2>
-        <div class="row">
-            <!-- Hour 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header bg-maroon text-white">
-                        <h4>✅ Hour 1: Laying the Foundation</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Define your niche, expertise & unique selling point (USP)</li>
-                            <li>Align your passion with a profitable business model</li>
-                            <li>Understand your target audience's pain points</li>
-                            <li>Overcome mindset blocks holding you back</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hour 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header bg-maroon text-white">
-                        <h4>✅ Hour 2: Business Models & Social Media Mastery</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Explore Online, Offline & Hybrid Business Models</li>
-                            <li>Master Instagram to grow your brand</li>
-                            <li>Get a content calendar & high-converting content strategies</li>
-                            <li>100+ Call-to-Action prompts & viral content hooks</li>
-                            <li>Discuss alternative revenue models for business growth</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hour 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header bg-maroon text-white">
-                        <h4>✅ Hour 3: Growth & Monetization</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Convert followers into paying clients with a strategy</li>
-                            <li>Repurpose content & automate processes to save time</li>
-                            <li>Build a strong personal brand & authority</li>
-                            <li>Q&A + Personalized Action Plan – Clear next steps</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+ <section id="main">
+   <section class="hero-section text-center container-fluid p-3">
+    <h2>Direct 1-1 Business power hour session exclusively for Bangalore</h2>
+       <h3 class="mb-4">🚀 3-Hour Business Power Hour – Live Session in Bangalore!</h3>
+       <p class="lead text-muted">This exclusive session is designed to empower you with the strategies and insights you need to fast-track your business success.</p>
+       <p class="text-muted">Not limited to 3 hours — we also offer free Zoom follow-ups as needed to help with your action points.</p>
+   </section>
+   <div class="container">
+   
+   
+       <!-- Action Plan Section -->
+       <section>
+           <h2 class="csection-title text-maroon text-center">Your Complete Growth Plan 🚀</h2>
+           <p class="text-center">Join this high-impact in-person strategy session designed to help you clarify your business goals, build a powerful brand, and create a step-by-step action plan for success.</p>
+           <p class="text-center font-weight-bold">📍We are located around Kundalahalli, Whitefield, and Marathahalli in Bangalore. Exact location details will be provided after booking your session.</p>
+           <p class="text-center font-weight-bold">Consultation Languages: English, Tamil, Hindi, Telugu</p>
+       </section>
+       <header class="text-center mb-5">
+           <img src="{% static 'images/service_creatives_rectangle/5.png' %}" alt="Business Strategy" class="img-fluid mb-4" style="max-height: 300px;">
+       </header>
+       <!-- What’s Inside Section -->
+       <div class="mt-4">
+        <h4 class="text-secondary">📌 What’s Inside? (Your Action Plan)</h4>
+    
+        <h5 class="mt-3 text-primary">✅ Hour 1: Laying the Foundation</h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">🔹 Define your niche, expertise & unique selling point (USP)</li>
+            <li class="list-group-item">🔹 Align your passion with a profitable business model</li>
+            <li class="list-group-item">🔹 Identify and understand your target audience’s pain points</li>
+            <li class="list-group-item">🔹 Overcome fears and mindset blocks that hold you back</li>
+        </ul>
+    
+        <h5 class="mt-3 text-primary">✅ Hour 2: Business Models & Social Media Mastery</h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">🔹 Explore Online, Offline & Hybrid Business Models</li>
+            <li class="list-group-item">🔹 Unlock Social Media Monster Mode – grow your brand on Instagram</li>
+            <li class="list-group-item">🔹 Get a full-month content calendar & learn high-converting content creation</li>
+            <li class="list-group-item">🔹 100+ Call-to-Action prompts & viral content hooks for more engagement</li>
+            <li class="list-group-item">🔹 Discuss alternative revenue models for business growth</li>
+        </ul>
+    
+        <h5 class="mt-3 text-primary">✅ Hour 3: Growth & Monetization</h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">🔹 Convert followers into paying clients with a structured strategy</li>
+            <li class="list-group-item">🔹 Repurpose content & automate processes to save time</li>
+            <li class="list-group-item">🔹 Build a strong personal brand & establish authority in your industry</li>
+            <li class="list-group-item">🔹 Q&A + Personalized Action Plan – Walk away with a clear next step</li>
+        </ul>
+    
+        <div class="mt-4">
+            <p>📍 <strong>Location:</strong> Bangalore (Exact venue will be shared upon booking)</p>
+            <p>🎯 Live, interactive session with real-time guidance & actionable insights</p>
         </div>
-    </section>
-
-    <!-- Why You Need This Section -->
-    <section class="my-5">
-        <h2 class="csection-title text-center">Why Do You Need This Direct Business Power Hour Session?</h2>
-        <p class="text-center">If you're struggling with any of the following:</p>
-        <ul class="text-center list-unstyled">
-            <li>❌ Lack of clarity on your niche or business direction</li>
-            <li>❌ Uncertainty about how to position yourself for success</li>
-            <li>❌ Inconsistent content not attracting the right audience</li>
-            <li>❌ Difficulty converting followers into paying clients</li>
-            <li>❌ Overwhelm about how to scale your business</li>
-        </ul>
-    </section>
-
-    <!-- Outcome Section -->
-    <section class="my-5">
-        <h2 class="csection-title text-center">The Outcome?</h2>
-        <p class="text-center">By the end of this session, you'll walk away with:</p>
-        <ul class="text-center list-unstyled">
-            <li>✔️ Clarity on your niche, positioning & business model</li>
-            <li>✔️ A complete content strategy to grow your clients</li>
-            <li>✔️ A monetization roadmap to convert leads into clients</li>
-            <li>✔️ A step-by-step action plan to execute immediately</li>
-        </ul>
-        <p class="text-center"><strong>🔥 Let’s make your business vision a reality! Book your Business Power Hour now.</strong></p>
-        <div class="text-center">
-            <a href="https://calendly.com/your-link" class="btn btn-maroon btn-lg">Book Now</a>
+    
+        <div class="alert alert-warning mt-4" role="alert">
+            🔥 <strong>This is NOT just another generic session!</strong><br>
+            Your 3-hour business power hour will be customized to your specific goals, challenges, and industry!
         </div>
-    </section>
-
-    <!-- Free 15-Minute Clarity Call -->
-    <section class="text-center my-5">
-        <p><strong>💡 Need something different? Let’s customize your plan!</strong></p>
-        <a href="https://calendly.com/your-link" class="btn btn-outline-success btn-lg">Book a FREE 15-Minute Clarity Call</a>
-    </section>
-
-    <!-- Who Needs This Section -->
-    <section>
-        <h2 class="csection-title text-center">Who Needs This?</h2>
-        <ul class="text-center list-unstyled">
-            <li>✅ Aspiring Entrepreneurs & Women Entrepreneurs – If you want to turn your skills into a profitable business but don’t know where to start.</li>
-            <li>✅ Coaches & Trainers – If you need a clear roadmap to position yourself as an expert and attract clients.</li>
-            <li>✅ Content Creators & Influencers – If you want to optimize your brand, create engaging content, and monetize your audience.</li>
-            <li>✅ Small Business Owners & Women Business Owners – If you need a strategy to grow online, improve marketing, and increase sales.</li>
-            <li>✅ Freelancers & Service Providers – If you’re struggling with visibility, lead generation, or scaling your business.</li>
-            <li>✅ Looking to Start or Scale a Business – If you want to create financial independence and impact through your expertise.</li>
+    
+        <h4 class="mt-4 text-secondary">Why Do You Need This Direct Business Power Hour Session?</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">❌ Lack of clarity on your niche or business direction</li>
+            <li class="list-group-item">❌ Uncertain how to position yourself for success</li>
+            <li class="list-group-item">❌ Inconsistent content that isn’t attracting the right audience</li>
+            <li class="list-group-item">❌ Difficulty converting followers into paying clients</li>
+            <li class="list-group-item">❌ Feeling overwhelmed with where to start or how to scale</li>
         </ul>
-        <p class="text-center">If you’re serious about growth, this call will give you the clarity and action plan you need. Book now! 🚀</p>
-    </section>
+    
+        <h4 class="mt-4 text-secondary">The Outcome?</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">✔️ Clarity on your niche, positioning & business model</li>
+            <li class="list-group-item">✔️ A full content strategy to grow your clients</li>
+            <li class="list-group-item">✔️ A monetization roadmap to turn leads into clients</li>
+            <li class="list-group-item">✔️ A step-by-step plan to execute immediately</li>
+        </ul>
+    
+        <div class="mt-4 text-center">
+            <p>🔥 Let’s make your business vision a reality!</p>
+            <a href="YOUR-CALENDLY-BOOKING-LINK" class="btn btn-primary m-2">Book 3-Hour Business Power Hour Session 🚀</a>
+            <br>
+            <p>💡 Need something different? Let’s customize your plan!</p>
+            <a href="YOUR-CALENDLY-FREE-CALL-LINK" class="btn btn-outline-primary m-2">Book FREE 15-Minute Clarity Call</a>
+        </div>
+    </div>
+    
+   
+    <div class="mt-4">
+      <h4 class="text-secondary">Who Needs This?</h4>
+      <ul class="list-group list-group-flush mt-3">
+          <li class="list-group-item">✅ Aspiring Entrepreneurs & Women Entrepreneurs – If you want to turn your skills into a profitable business but don’t know where to start.</li>
+          <li class="list-group-item">✅ Coaches & Trainers – If you need a clear roadmap to position yourself as an expert and attract clients.</li>
+          <li class="list-group-item">✅ Content Creators & Influencers – If you want to optimize your brand, create engaging content, and monetize your audience.</li>
+          <li class="list-group-item">✅ Small Business Owners & Women Business Owners – If you need a strategy to grow online, improve marketing, and increase sales.</li>
+          <li class="list-group-item">✅ Freelancers & Service Providers – If you’re struggling with visibility, lead generation, or scaling your business.</li>
+          <li class="list-group-item">✅ Looking to Start or Scale a Business – If you want to create financial independence and impact through your expertise.</li>
+      </ul>
+  
+      <div class="mt-4 alert alert-success" role="alert">
+          If you’re serious about growth, this call will give you the clarity and action plan you need. <strong>Book now! 🚀</strong>
+      </div>
+  </div>
+  
 <!-- FAQs Section -->
 <section class="mb-5">
-    <h2 class="csection-title text-center mb-4">FAQs – 3-Hour Business Power Hour Session</h2>
-    <div class="accordion" id="faqsAccordion">
-      
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            1. Who is this Business Power Hour for?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            Aspiring entrepreneurs, coaches, trainers, content creators, small business owners, freelancers, and women entrepreneurs looking to build, grow, or scale their business.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            2. What will I gain from this?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            A clear roadmap for your business, including niche clarity, content strategy, monetization plan, and actionable steps to start or scale successfully.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            3. Can the session be customized?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            Yes, it can be fully tailored to your specific goals, challenges, and needs.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            4. I’m just starting out. Is this for me?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            Yes! This session is designed for both beginners and experienced entrepreneurs to create a solid foundation for success.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            5. Will I get a recording or notes after the session?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            Yes! You will receive a session summary, action plan, and any relevant resources to help you implement your new strategy.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            6. Do I need any prior knowledge before booking?
-          </button>
-        </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            No prior knowledge is needed! We’ll guide you step by step based on your current stage in business.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSeven">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-            7. What if I still have questions after the session?
-          </button>
-        </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            We offer follow-up coaching sessions to provide additional guidance if needed.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingEight">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-            8. Do you offer refunds?
-          </button>
-        </h2>
-        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            All purchases are non-refundable due to the nature of the content. Please review details before purchasing.
-          </div>
-        </div>
-      </div>
-  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingNine">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-            9. How do I book my Business Power Hour?
-          </button>
-        </h2>
-        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqsAccordion">
-          <div class="accordion-body">
-            Click the booking link or contact us to schedule your session. Let’s build your success together! 🚀
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </section>
-  
+  <h2 class="csection-title text-center mb-4">FAQs – 3-Hour Business Power Hour Session</h2>
+  <div class="accordion" id="faqsAccordion">
 
-</div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          1. Who is this Business Power Hour for?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          This session is ideal for aspiring entrepreneurs, coaches, trainers, content creators, small business owners, freelancers, and women entrepreneurs looking to build, grow, or scale their business.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          2. What will I gain from this?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          You’ll get a clear roadmap for your business, including niche clarity, content strategy, monetization plan, and action steps to start or scale successfully.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          3. Can the session be customized?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          Absolutely! The 3 hours can be fully tailored to your specific business goals, challenges, and needs.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          4. I’m just starting out. Is this for me?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          Yes! Whether you're a beginner or already in business, this session helps you gain clarity, avoid common mistakes, and create a solid plan for success.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          5. Will I get a recording or notes after the session?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          Yes! You will receive a session summary, action plan, and any relevant resources to help you implement what you’ve learned.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          6. Do I need any prior knowledge before booking?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          No prior knowledge is needed! We’ll guide you step by step based on your current stage in business.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          7. What if I still have questions after the session?
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          You’ll have a clear action plan, but if you need more guidance, we offer follow-up coaching sessions.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          8. Do you offer refunds?
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          Due to the nature of content and information shared, all purchases are non-refundable. Please read the descriptions carefully before purchasing.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingNine">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          9. How do I book my Business Power Hour?
+        </button>
+      </h2>
+      <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqsAccordion">
+        <div class="accordion-body">
+          Click the booking link or reach out to schedule your session. Let’s build your success together! 🚀
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   
+   </div>
+ </section>
 
 {% endblock content %}
