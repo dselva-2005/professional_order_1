@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-   
+from .models import HomePage
 
+homepage = HomePage.objects.first()
 # Create your views here.
 class Home(TemplateView):
     def get(self,request):
         title = "Home"
-        return render(request,'home.html',{"title":title})
+        return render(request,'home.html',{"title":title,"homepage":homepage})
 
 def about_us(request):
     title = "About Us"

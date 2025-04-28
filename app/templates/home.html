@@ -9,7 +9,8 @@
         <!-- Hero Section -->
         <section class="hero-section text-white d-flex align-items-center justify-content-center">
             <figure class="h-100 w-100 m-0">
-                <img src="{% static 'images/newbanner.png' %}" alt="Main banner promoting coaching and services" class="img-fluid h-100 w-100 object-fit-cover">
+                <img src="{{ homepage.header_image.url }}" alt="Main banner promoting coaching and services" class="img-fluid h-100 w-100 object-fit-cover">
+                {% comment %} <img src="{% static 'images/newbanner.png' %}" alt="Main banner promoting coaching and services" class="img-fluid h-100 w-100 object-fit-cover"> {% endcomment %}
             </figure>
         </section>        
 
@@ -143,7 +144,7 @@
 
             <!-- Realist Section -->
             <section class="py-5 bg-white">
-                <div class="row justify-content-center">
+                {% comment %} <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <h1 class="fw-bold text-maroon">If you choose to work with me, you’re not just getting a trainer, coach, or strategist—you’re getting a realist.</h1>
 
@@ -181,6 +182,9 @@
                             </a>
                         </p>
                     </div>
+                </div> {% endcomment %}
+                <div class="tinymce-content">
+                    {{ homepage.htmlContent|safe }}
                 </div>
             </section>
 
