@@ -1,5 +1,7 @@
 from django.db import models
 from tinymce.models import HTMLField
+
+
 # Create your models here.
 class HomePage(models.Model):
     header_image = models.ImageField()

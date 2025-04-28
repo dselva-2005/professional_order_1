@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from .models import HomePage
 
-homepage = HomePage.objects.first()
 # Create your views here.
 class Home(TemplateView):
     def get(self,request):
+        homepage = HomePage.objects.first()
         title = "Home"
         return render(request,'home.html',{"title":title,"homepage":homepage})
 
