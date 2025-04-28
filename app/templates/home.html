@@ -144,8 +144,8 @@
 
             <!-- Realist Section -->
             <section class="py-5 bg-white">
-                {% comment %} <div class="row justify-content-center">
-                    <div class="col-lg-10">
+                <div class="row justify-content-center">
+                    {% comment %} <div class="col-lg-10">
                         <h1 class="fw-bold text-maroon">If you choose to work with me, you’re not just getting a trainer, coach, or strategist—you’re getting a realist.</h1>
 
                         <h2 class="fw-bold mt-5 text-maroon">What does that mean?</h2>
@@ -181,10 +181,15 @@
                                 Let's Connect
                             </a>
                         </p>
-                    </div>
-                </div> {% endcomment %}
+                    </div> {% endcomment %}
+                </div>
                 <div class="tinymce-content">
                     {{ homepage.htmlContent|safe }}
+                    <p class="text-center">
+                        <a href="#contact" class="btn btn-outline-dark mt-3 text-uppercase" style="color: #695c3b; border-color: #695c3b;">
+                            Let's Connect
+                        </a>
+                    </p>
                 </div>
             </section>
 
