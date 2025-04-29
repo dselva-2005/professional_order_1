@@ -140,30 +140,48 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
 X_FRAME_OPTIONS = "SAMEORIGIN"
-
 TINYMCE_DEFAULT_CONFIG = {
     'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 20,
+    'custom_undo_redo_levels': 50,
     'selector': 'textarea',
     'theme': 'silver',
+    'height': 600,
     'plugins': '''
-            textcolor save link image media preview codesample contextmenu
-            table code lists fullscreen  insertdatetime  nonbreaking
-            contextmenu directionality searchreplace wordcount visualblocks
-            visualchars code fullscreen autolink lists  charmap print  hr
-            anchor pagebreak
-            ''',
+        advlist autolink lists link image charmap print preview anchor
+        searchreplace visualblocks code fullscreen
+        insertdatetime media table paste code help wordcount
+        hr pagebreak nonbreaking save directionality
+        textcolor colorpicker textpattern imagetools
+        codesample emoticons template
+    ''',
     'toolbar1': '''
-            fullscreen preview bold italic underline | fontselect,
-            fontsizeselect  | forecolor backcolor | alignleft alignright |
-            aligncenter alignjustify | indent outdent | bullist numlist table |
-            | link image media | codesample |
-            ''',
-    'toolbar2': '''
-            visualblocks visualchars |
-            charmap hr pagebreak nonbreaking anchor |  code |
-            ''',
-    'contextmenu': 'formats | link image',
-    'menubar': True,
+        undo redo | formatselect | bold italic underline strikethrough |
+        forecolor backcolor | fontselect fontsizeselect |
+        alignleft aligncenter alignright alignjustify |
+        bullist numlist outdent indent | table |
+        link image media | codesample emoticons template |
+        hr pagebreak | removeformat | fullscreen preview save | code help
+    ''',
+    'contextmenu': 'link image inserttable | cell row column deletetable',
+    'menubar': 'file edit view insert format tools table help',
     'statusbar': True,
+    'branding': False,  # removes "Powered by TinyMCE"
+    'image_caption': True,
+    'quickbars_selection_toolbar': 'bold italic underline | quicklink h2 h3 blockquote quickimage quicktable',
+    'quickbars_insert_toolbar': 'image media codesample template hr pagebreak',
+    'nonbreaking_force_tab': True,
+    'paste_data_images': True,  # allow pasting images directly
+    'automatic_uploads': True,
+    'file_picker_types': 'image media file',
+    'content_style': 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+
+    # ALLOW BUTTONS AND MORE CUSTOM TAGS
+    'extended_valid_elements': '''
+        button[class|id|name|onclick|style|type],
+        iframe[src|frameborder|style|scrolling|class|width|height|name|align],
+        script[type|src],
+        form[action|method|class|id|style],
+        input[type|name|value|class|id|style|placeholder]
+    ''',
+    'valid_children': '+body[button|form|iframe|script]',
 }
