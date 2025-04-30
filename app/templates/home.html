@@ -9,8 +9,7 @@
         <!-- Hero Section -->
         <section class="hero-section text-white d-flex align-items-center justify-content-center">
             <figure class="h-100 w-100 m-0">
-                <img src="{{ homepage.header_image.url }}" alt="Main banner promoting coaching and services" class="img-fluid h-100 w-100 object-fit-cover">
-                {% comment %} <img src="{% static 'images/newbanner.png' %}" alt="Main banner promoting coaching and services" class="img-fluid h-100 w-100 object-fit-cover"> {% endcomment %}
+                <img src="{% static 'images/newbanner.png' %}" alt="Main banner promoting coaching and services" class="img-fluid h-100 w-100 object-fit-cover">
             </figure>
         </section>        
 
@@ -120,14 +119,14 @@
         <div class="container-lg" style="width: 90%; margin:auto">
             <div class="row mb-4 d-flex flex-wrap">
                 <!-- Left Image Column -->
-                <div class="col-lg-12 col-12 d-flex p-1">
+                <div class="col-lg-6 col-12 d-flex p-1">
                     <div class="w-100 h-100">
                         <img src="{% static 'images/Website_Images/Home_page_first_image.jpeg' %}" alt="..."
                             class="img-fluid w-100 h-100 object-fit-cover">
                     </div>
                 </div>
 
-                {% comment %} <!-- Right Text Column -->
+                <!-- Right Text Column -->
                 <div class="col-lg-6 col-12 d-flex p-1">
                     <div class="d-flex flex-column justify-content-center align-items-start w-100 h-100 p-5 text-white bg-dark">
                         <h1 class="mb-4">About Us</h1>
@@ -139,13 +138,13 @@
                         </p>
                         <a href="#services" class="btn btn-maroon mt-4">See What We Do</a>
                     </div>
-                </div> {% endcomment %}
+                </div>
             </div>
 
             <!-- Realist Section -->
             <section class="py-5 bg-white">
                 <div class="row justify-content-center">
-                    {% comment %} <div class="col-lg-10">
+                    <div class="col-lg-10">
                         <h1 class="fw-bold text-maroon">If you choose to work with me, you’re not just getting a trainer, coach, or strategist—you’re getting a realist.</h1>
 
                         <h2 class="fw-bold mt-5 text-maroon">What does that mean?</h2>
@@ -181,16 +180,9 @@
                                 Let's Connect
                             </a>
                         </p>
-                    </div> {% endcomment %}
+                    </div>
                 </div>
-                <div class="tinymce-content">
-                    {{ homepage.htmlContent|safe }}
-                    <p class="text-center">
-                        <a href="#contact" class="btn btn-outline-dark mt-3 text-uppercase" style="color: #695c3b; border-color: #695c3b;">
-                            Let's Connect
-                        </a>
-                    </p>
-                </div>
+
             </section>
 
             <!-- Services Section -->
