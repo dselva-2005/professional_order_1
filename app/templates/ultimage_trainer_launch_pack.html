@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}{{ title }}{% endblock title %}
 {% block content %}
 {% include "navbar.html" %}
 <link rel="stylesheet" href="{% static "css/ultimate_trainer_launch_pack.css" %}">
-{% block title %}{{ title }}{% endblock title %}
 
 <section id="main">
   <header class="text-center container-fluid">

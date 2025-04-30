@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title %}{{ title }}{% endblock title %}
 {% block content %}
 {% include "navbar.html" %}
-{% block title %}{{ title }}{% endblock title %}
 <link rel="stylesheet" href="{% static "css/beginner_to_pro.css" %}">
 <section id="main">
     <header class="text-center mb-5 container-fluid p-3">
